@@ -3,7 +3,7 @@ import { gql } from 'apollo-boost';
 
 
 const login = gql`
-	mutation LoginUser($username: String!, $password: String!) {
+  mutation LoginUser($username: String!, $password: String!) {
 		login(input: { clientMutationId: "uniqueId", username: $username, password: $password }) {
 			authToken
 			user {
@@ -22,18 +22,18 @@ const login = gql`
 `;
 
 const register = gql`
-mutation REGISTER_USER($input: RegisterUserInput!) {
+  mutation REGISTER_USER($input: RegisterUserInput!) {
 	registerCustomer(input: $input) {
 		customer {
 		id
 		name
-	  }
+      }
 	}
   }
 `;
 
 const categories = gql`
-{
+  {
 	productCategories{
 	  nodes{
 		id
@@ -52,8 +52,8 @@ const categories = gql`
 		name
 		  }
 		}
-	  }
-	}
+      }
+    }
   }
 `;
 const categories1 = `
@@ -81,13 +81,11 @@ const categories1 = `
   }
 `;
 
-
-const productsSorted = (orderby) => gql`
+const productsSorted = orderby => gql`
 {
   products(first: 15, where:{orderby:${orderby}}){
     nodes {
       id
-      productId
       name
       description
       ... on SimpleProduct{
@@ -111,7 +109,6 @@ const singleProduct = (query) => gql`
 query {
 	product( id: "${query}") {
 	  id
-	  productId
 	  averageRating
 	  purchaseNote
 	  ... on SimpleProduct{
@@ -152,10 +149,10 @@ query {
 `;
 
 const checkout = gql`
-	mutation checkout($input: CheckoutInput!) {
-		checkout(input: $input) {
-			clientMutationId
-			order {
+  mutation checkout($input: CheckoutInput!) {
+    checkout(input: $input) {
+      clientMutationId
+      order {
 				id
 				refunds {
 					nodes {
@@ -168,22 +165,25 @@ const checkout = gql`
 			}
 			result
 			redirect
-		}
-	}
-`;
-
-const refreshToken = gql`
-mutation RefreshJwtAuthTokenPayload($jwtRefreshToken : String!){
-	refreshJwtAuthToken(input: {clientMutationId: "uniqueId" ,jwtRefreshToken: $jwtRefreshToken}){
-	  authToken
-	  clientMutationId
-	}
+    }
   }
 `;
 
-const addToCart = (qty, id, mut) => JSON.stringify({
-	query: `mutation {
-    addToCart( input:  {    quantity: ${qty},    productId: ${id},    clientMutationId: "${mut}" }) {
+const refreshToken = gql`
+  mutation RefreshJwtAuthTokenPayload($jwtRefreshToken: String!) {
+    refreshJwtAuthToken(
+      input: {clientMutationId: "uniqueId", jwtRefreshToken: $jwtRefreshToken}
+    ) {
+      authToken
+      clientMutationId
+    }
+  }
+`;
+
+const addToCart = (qty, id, mut) =>
+  JSON.stringify({
+    query: `mutation {
+    addToCart( input:  {    quantity: ${qty},    clientMutationId: "${mut}" }) {
         clientMutationId
         cartItem {
             key
@@ -201,14 +201,14 @@ const addToCart = (qty, id, mut) => JSON.stringify({
         }
     }
 }
-`  });
+`,
+  });
 
 const productsByCategories = (orderby) =>gql`
 {
   products(first: 200, where:{categoryIn:"${orderby}"}){
     nodes {
       id
-      productId
       name
       description
 	  ... on SimpleProduct{
@@ -234,7 +234,6 @@ query MyQuery {
 	products(where: {search:"${name}"}){
 	  nodes{
 		  id
-		productId
 		name
 		description
 		... on SimpleProduct{
@@ -254,4 +253,16 @@ query MyQuery {
   }
   `
 
-export {login,register,categories,productsSorted,singleProduct,checkout,refreshToken,addToCart,categories1,productsByCategories,searchQuery}
+export {
+  login,
+  register,
+  categories,
+  productsSorted,
+  singleProduct,
+  checkout,
+  refreshToken,
+  addToCart,
+  categories1,
+  productsByCategories,
+  searchQuery,
+};

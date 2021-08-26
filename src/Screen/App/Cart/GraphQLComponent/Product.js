@@ -89,12 +89,19 @@ function Refactoring(Cart) {
   Cart.forEach((e, i) => {
     a += Alph[i] + `: product( id: "` + e.id + `" ) {
       id
-      productId
       name
       image{
         sourceUrl
       }
-      price
+      ... on SimpleProduct{
+        price
+      }
+      ... on VariableProduct{
+        price
+      }
+      ... on ExternalProduct{
+        price
+      }
       description
     }`;
   });

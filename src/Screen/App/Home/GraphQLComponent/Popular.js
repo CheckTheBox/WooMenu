@@ -9,10 +9,17 @@ const GET_P = (orderby) => gql`
   products(first: 15, where:{orderby:${orderby}}){
     nodes {
       id
-      productId
       name
       description
-      price
+      ... on SimpleProduct{
+        price
+      }
+      ... on VariableProduct{
+        price
+      }
+      ... on ExternalProduct{
+        price
+      }
       image{
         sourceUrl
       }

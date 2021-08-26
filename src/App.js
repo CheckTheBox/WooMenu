@@ -43,7 +43,7 @@ persistCache({
 });
 
 const client = new ApolloClient({
-  uri: 'https://wooshop.tk/graphql',
+  uri: 'http://185.230.205.140/graphql',
   cache,
 });
 
