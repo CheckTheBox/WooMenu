@@ -48,12 +48,9 @@ function OrderBY(order){
         return {title : "All Products 🎉", filter : '{field: PARENT,order: DESC }'}
         break;
       case 1:
-        return {title : "Most Popular ❤", filter : '{field: RATING,order: DESC }'}
-        break;
-      case 2:
           return {title : "Latest Products 🌹", filter : '{field: DATE,order: DESC }'}
           break;
-      case 3:
+      case 2:
           return {title : "Most Sold 🙌", filter : '{field: TOTAL_SALES,order: DESC }'}
           break;
       default :

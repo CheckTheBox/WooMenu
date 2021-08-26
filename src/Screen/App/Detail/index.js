@@ -28,7 +28,7 @@ class Detail extends Component {
 		return (
 			<Layout style={this.style.ViewStyle}>
 				<View style={{ backgroundColor: "transparent", paddingBottom: 20 }} >
-					<HeaderC heading={"Products"} navigation={this.props.navigation} />
+					<HeaderC heading={"Producty"} navigation={this.props.navigation} />
 					<SearchC />
 				</View>
 				<ScrollView style={{ flex: 1 }}>

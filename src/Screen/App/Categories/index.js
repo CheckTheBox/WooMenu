@@ -18,7 +18,7 @@ class Cate extends Component {
 	}
 	componentDidMount() {
 		axios({
-			url: 'https://eproject.tk/graphql',
+			url: 'http://185.230.205.140/graphql',
 			method: 'post',
 			data: {
 				query: categories1
