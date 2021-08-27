@@ -921,6 +921,11 @@
   "resolved" "https://registry.npmjs.org/@eva-design/processor/-/processor-1.4.0.tgz"
   "version" "1.4.0"
 
+"@fontsource/montserrat@^4.5.1":
+  "integrity" "sha512-xdMkzsnFlzDt5Vj9+AWuUp4Vd9F3hYN2I0GTZZYscWN/bQ20wVOGtdWLO8Okfv7SZ9t/z39/EayAAt+f/8tAvw=="
+  "resolved" "https://registry.npmjs.org/@fontsource/montserrat/-/montserrat-4.5.1.tgz"
+  "version" "4.5.1"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-mV6T0IYqb0xL1UALPFplXYQmR0twnXG0M6jUswpquqT2sD12BOiCiLy3EvMp/Fy7s3DZElC4/aPjEjo2jeZpvw=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.0.0.tgz"
