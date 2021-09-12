@@ -1,33 +1,60 @@
-import React, {  } from "react";
-import { TouchableHighlight } from "react-native";
+import React from 'react';
+import {TouchableHighlight} from 'react-native';
 
-import {  Button } from "@ui-kitten/components";
+import {Button} from '@ui-kitten/components';
+import {Text} from '@ui-kitten/components';
+import {TouchableOpacity, Image} from 'react-native';
+import {ImageBackground} from 'react-native';
+import {View} from 'react-native';
 
+// TODO: здесь должна быть обложка категории
 function CarC(props) {
-
-
-
   return (
-     
-      <Button style={{
-          height: 140, flex: 1, justifyContent: 'center', alignItems: 'center', borderRadius: 20, shadowColor: "#000",
-          shadowOffset: {
-            width: 0,
-            height: 12,
-          },
-          margin: 4,
-          shadowOpacity: 0.58,
-          shadowRadius: 16.00,
-
-          elevation: 24,
+    <TouchableOpacity
+      style={{
+        height: 210,
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20,
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 12,
+          height: 12,
+        },
+        margin: 4,
+        shadowOpacity: 0.58,
+        shadowRadius: 16.0,
+        elevation: 24,
+      }}
+      onPress={() =>
+        props.navigation.navigate('CatDetail', {data: props.data})
+      }>
+      <ImageBackground
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: 0,
+          width: '95%',
+          height: '95%',
+          resizeMode: 'cover',
         }}
-        onPress={() => props.navigation.navigate('CatDetail', { data: props.data })}
-      >
-      {props.data.name}
-      </Button>
-  )
+        source={{uri: props.data.image.sourceUrl}}>
+        <Text
+          style={{
+            color: 'white',
+            fontSize: 24,
+            lineHeight: 32,
+            fontWeight: 'bold',
+            textAlign: 'center',
+            backgroundColor: '#00000090',
+          }}>
+          {props.data.name}
+        </Text>
+      </ImageBackground>
+    </TouchableOpacity>
+  );
 }
 
-
-
-export default CarC
+export default CarC;

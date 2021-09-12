@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "WooShop.app"
-               BlueprintName = "WooShop"
-               ReferencedContainer = "container:WooShop.xcodeproj">
+               BuildableName = "Kaizen Menu.app"
+               BlueprintName = "Kaizen Menu"
+               ReferencedContainer = "container:Kaizen Menu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "WooShopTests.xctest"
-               BlueprintName = "WooShopTests"
-               ReferencedContainer = "container:WooShop.xcodeproj">
+               BuildableName = "Kaizen MenuTests.xctest"
+               BlueprintName = "Kaizen MenuTests"
+               ReferencedContainer = "container:Kaizen Menu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -55,29 +55,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "Kaizen Menu.app"
+            BlueprintName = "Kaizen Menu"
+            ReferencedContainer = "container:Kaizen Menu.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "WooShopTests.xctest"
-               BlueprintName = "WooShopTests"
-               ReferencedContainer = "container:WooShop.xcodeproj">
+               BuildableName = "Kaizen MenuTests.xctest"
+               BlueprintName = "Kaizen MenuTests"
+               ReferencedContainer = "container:Kaizen Menu.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WooShop.app"
-            BlueprintName = "WooShop"
-            ReferencedContainer = "container:WooShop.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -94,13 +92,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WooShop.app"
-            BlueprintName = "WooShop"
-            ReferencedContainer = "container:WooShop.xcodeproj">
+            BuildableName = "Kaizen Menu.app"
+            BlueprintName = "Kaizen Menu"
+            ReferencedContainer = "container:Kaizen Menu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -113,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WooShop.app"
-            BlueprintName = "WooShop"
-            ReferencedContainer = "container:WooShop.xcodeproj">
+            BuildableName = "Kaizen Menu.app"
+            BlueprintName = "Kaizen Menu"
+            ReferencedContainer = "container:Kaizen Menu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

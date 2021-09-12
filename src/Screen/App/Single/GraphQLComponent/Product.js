@@ -66,7 +66,7 @@ const GetProduct = props => {
       </View>
       <View style={{flex: 1, margin: 30, alignItems: 'center'}}>
         <Text h1 style={style.TextStyle}>
-          ✔{data.product.name}{' '}
+          ✔ {data.product.name}{' '}
         </Text>
         {data.product.onSale ? (
           <Text style={{fontFamily: 'Montserrat-Bold', fontSize: 23}}>
@@ -81,11 +81,11 @@ const GetProduct = props => {
         </Text>
         {loop()}
         <Text style={{fontFamily: 'Montserrat-Light'}}>
-          🔵{striptags(data.product.description)}
+          🔵 {striptags(data.product.description)}
         </Text>
-        <Text style={{fontFamily: 'Montserrat-Light'}}>
-          🤞SKU :{striptags(data.product.sku)}
-        </Text>
+        {/*<Text style={{fontFamily: 'Montserrat-Light'}}>*/}
+        {/*  🤞SKU :{striptags(data.product.sku)}*/}
+        {/*</Text>*/}
         {/* <Attributes options={data.product.attributes ? data.product.attributes.nodes : []} /> */}
         {data.product.purchaseNote ? (
           <Layout

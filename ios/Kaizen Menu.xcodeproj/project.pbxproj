@@ -17,7 +17,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* WooShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WooShopTests.m */; };
 		387122DE5CC95A71AB481BB7 /* libPods-WooShop-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4EB0EDB3EF456E8D12723F /* libPods-WooShop-tvOS.a */; };
-		4A8FE2AC3B626A0BF623E424 /* libPods-WooShopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1E25B4B9DEB6371456DE33 /* libPods-WooShopTests.a */; };
+		4A7C9AE526E7039A009910E0 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55850EC2F1644CDAAFDF2B7 /* Montserrat-Light.ttf */; };
 		4AE7AACE26D971EE00D7472A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 061D8186F6F842938E6A3CCF /* Montserrat-Bold.ttf */; };
 		4AE7AACF26D971F700D7472A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF26B95FF6E5427E9791C7F4 /* Montserrat-SemiBold.ttf */; };
 		98E81ACC9815B05EEA78B466 /* libPods-WooShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C04AA1A07DE6B23C1E76289E /* libPods-WooShop.a */; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* WooShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WooShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* Kaizen MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kaizen MenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WooShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WooShopTests.m; sourceTree = "<group>"; };
 		0337B3EBEC5640B3AE5B9B04 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		08B3207CE52E4E5DB5E8CC51 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		09DF1A485DE643F289B91660 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		0C579A7EADE74A688D68767D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* WooShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Kaizen Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaizen Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WooShop/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WooShop/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		1D2879870D2B50BD3DCF9BFF /* Pods-WooShop-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WooShop-tvOS/Pods-WooShop-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2478D3E86B1A4B079E40D305 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		2BF20657AF044306896C6635 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins/Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* WooShop-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WooShop-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* WooShop-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WooShop-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Kaizen Menu-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaizen Menu-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Kaizen Menu-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kaizen Menu-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEA9EC30DC47CCA17765B6 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		3BAF00CA50D4409AB1819E31 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AbrilFatface-Regular.ttf"; path = "../assets/fonts/Abril_Fatface/AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
 		3CC25C86C119D80CB3605145 /* Pods-WooShop-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WooShop-tvOS/Pods-WooShop-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +85,6 @@
 		58443D7827A24BDAA13E7003 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		6001F182441B434F8314517B /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		6413EC57D5FB42CAA5502AD8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		6B1E25B4B9DEB6371456DE33 /* libPods-WooShopTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShopTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2BFB7DE58544D591DA845D /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-BlackItalic.ttf"; path = "../assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
 		771F835ABD244E0E9DC56CF3 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		7A8F551CE1704933A3CA77D6 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8FE2AC3B626A0BF623E424 /* libPods-WooShopTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +219,6 @@
 				C04AA1A07DE6B23C1E76289E /* libPods-WooShop.a */,
 				ED4EB0EDB3EF456E8D12723F /* libPods-WooShop-tvOS.a */,
 				3F2B09B1DE276F1F5D35613D /* libPods-WooShop-tvOSTests.a */,
-				6B1E25B4B9DEB6371456DE33 /* libPods-WooShopTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,10 +249,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* WooShop.app */,
-				00E356EE1AD99517003FC87E /* WooShopTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* WooShop-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* WooShop-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Kaizen Menu.app */,
+				00E356EE1AD99517003FC87E /* Kaizen MenuTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Kaizen Menu-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Kaizen Menu-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -330,9 +327,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* WooShopTests */ = {
+		00E356ED1AD99517003FC87E /* Kaizen MenuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WooShopTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Kaizen MenuTests" */;
 			buildPhases = (
 				567E59D983DB70798A0B4A8A /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -344,14 +341,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = WooShopTests;
+			name = "Kaizen MenuTests";
 			productName = WooShopTests;
-			productReference = 00E356EE1AD99517003FC87E /* WooShopTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* Kaizen MenuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* WooShop */ = {
+		13B07F861A680F5B00A75B9A /* Kaizen Menu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WooShop" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kaizen Menu" */;
 			buildPhases = (
 				6D701FC8ACFBBCF30BE83C8A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -365,14 +362,14 @@
 			);
 			dependencies = (
 			);
-			name = WooShop;
+			name = "Kaizen Menu";
 			productName = WooShop;
-			productReference = 13B07F961A680F5B00A75B9A /* WooShop.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Kaizen Menu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* WooShop-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Kaizen Menu-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WooShop-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kaizen Menu-tvOS" */;
 			buildPhases = (
 				0D681A33FCDA3055A1E36AF4 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -386,14 +383,14 @@
 			);
 			dependencies = (
 			);
-			name = "WooShop-tvOS";
+			name = "Kaizen Menu-tvOS";
 			productName = "WooShop-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* WooShop-tvOS.app */;
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Kaizen Menu-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* WooShop-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Kaizen Menu-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WooShop-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kaizen Menu-tvOSTests" */;
 			buildPhases = (
 				AB463B1033C73665B7E3BD7F /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -405,9 +402,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "WooShop-tvOSTests";
+			name = "Kaizen Menu-tvOSTests";
 			productName = "WooShop-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* WooShop-tvOSTests.xctest */;
+			productReference = 2D02E4901E0B4A5D006451C7 /* Kaizen Menu-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -417,14 +414,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 940;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = MikaGroup;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 57YL9YZT2D;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 57YL9YZT2D;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57YL9YZT2D;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -434,7 +436,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WooShop" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen Menu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -448,10 +450,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* WooShop */,
-				00E356ED1AD99517003FC87E /* WooShopTests */,
-				2D02E47A1E0B4A5D006451C7 /* WooShop-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* WooShop-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Kaizen Menu */,
+				00E356ED1AD99517003FC87E /* Kaizen MenuTests */,
+				2D02E47A1E0B4A5D006451C7 /* Kaizen Menu-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Kaizen Menu-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -468,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7C9AE526E7039A009910E0 /* Montserrat-Light.ttf in Resources */,
 				4AE7AACF26D971F700D7472A /* Montserrat-SemiBold.ttf in Resources */,
 				4AE7AACE26D971EE00D7472A /* Montserrat-Bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
@@ -789,12 +792,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* WooShop */;
+			target = 13B07F861A680F5B00A75B9A /* Kaizen Menu */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* WooShop-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Kaizen Menu-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -817,12 +820,14 @@
 			baseConfigurationReference = 934B3A53ADA4CD72C7D374D8 /* Pods-WooShopTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = WooShopTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -831,7 +836,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WooShop.app/WooShop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen Menu.app/Kaizen Menu";
 			};
 			name = Debug;
 		};
@@ -840,9 +845,11 @@
 			baseConfigurationReference = E4E8B4AFDC700B3089E25CC6 /* Pods-WooShopTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				INFOPLIST_FILE = WooShopTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -851,7 +858,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WooShop.app/WooShop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen Menu.app/Kaizen Menu";
 			};
 			name = Release;
 		};
@@ -862,6 +869,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				INFOPLIST_FILE = WooShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -869,8 +877,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = WooShop;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mikagroup.kaizenmenu;
+				PRODUCT_NAME = "Kaizen Menu";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -882,6 +890,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				INFOPLIST_FILE = WooShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -889,8 +898,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = WooShop;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mikagroup.kaizenmenu;
+				PRODUCT_NAME = "Kaizen Menu";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -900,13 +909,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D2879870D2B50BD3DCF9BFF /* Pods-WooShop-tvOS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "WooShop-tvOS/Info.plist";
@@ -916,7 +925,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.WooShop-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mikagroup.kaizenmenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -928,7 +937,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CC25C86C119D80CB3605145 /* Pods-WooShop-tvOS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -936,6 +944,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "WooShop-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -944,7 +953,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.WooShop-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mikagroup.kaizenmenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -974,7 +983,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.WooShop-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WooShop-tvOS.app/WooShop-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen Menu-tvOS.app/Kaizen Menu-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1001,7 +1010,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.WooShop-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WooShop-tvOS.app/WooShop-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen Menu-tvOS.app/Kaizen Menu-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1035,6 +1044,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1088,6 +1098,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1108,7 +1119,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WooShopTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Kaizen MenuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1117,7 +1128,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WooShop" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kaizen Menu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1126,7 +1137,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WooShop-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kaizen Menu-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1135,7 +1146,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WooShop-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kaizen Menu-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1144,7 +1155,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WooShop" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen Menu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

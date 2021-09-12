@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "WooShop-tvOS.app"
-               BlueprintName = "WooShop-tvOS"
-               ReferencedContainer = "container:WooShop.xcodeproj">
+               BuildableName = "Kaizen Menu-tvOS.app"
+               BlueprintName = "Kaizen Menu-tvOS"
+               ReferencedContainer = "container:Kaizen Menu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "WooShop-tvOSTests.xctest"
-               BlueprintName = "WooShop-tvOSTests"
-               ReferencedContainer = "container:WooShop.xcodeproj">
+               BuildableName = "Kaizen Menu-tvOSTests.xctest"
+               BlueprintName = "Kaizen Menu-tvOSTests"
+               ReferencedContainer = "container:Kaizen Menu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -55,29 +55,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
+            BuildableName = "Kaizen Menu-tvOS.app"
+            BlueprintName = "Kaizen Menu-tvOS"
+            ReferencedContainer = "container:Kaizen Menu.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "WooShop-tvOSTests.xctest"
-               BlueprintName = "WooShop-tvOSTests"
-               ReferencedContainer = "container:WooShop.xcodeproj">
+               BuildableName = "Kaizen Menu-tvOSTests.xctest"
+               BlueprintName = "Kaizen Menu-tvOSTests"
+               ReferencedContainer = "container:Kaizen Menu.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "WooShop-tvOS.app"
-            BlueprintName = "WooShop-tvOS"
-            ReferencedContainer = "container:WooShop.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -94,13 +92,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "WooShop-tvOS.app"
-            BlueprintName = "WooShop-tvOS"
-            ReferencedContainer = "container:WooShop.xcodeproj">
+            BuildableName = "Kaizen Menu-tvOS.app"
+            BlueprintName = "Kaizen Menu-tvOS"
+            ReferencedContainer = "container:Kaizen Menu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -113,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "WooShop-tvOS.app"
-            BlueprintName = "WooShop-tvOS"
-            ReferencedContainer = "container:WooShop.xcodeproj">
+            BuildableName = "Kaizen Menu-tvOS.app"
+            BlueprintName = "Kaizen Menu-tvOS"
+            ReferencedContainer = "container:Kaizen Menu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

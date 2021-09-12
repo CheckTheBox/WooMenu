@@ -1,57 +1,61 @@
-
-import { gql } from 'apollo-boost';
-
+import {gql} from 'apollo-boost';
 
 const login = gql`
   mutation LoginUser($username: String!, $password: String!) {
-		login(input: { clientMutationId: "uniqueId", username: $username, password: $password }) {
-			authToken
-			user {
-				id
-				userId
-				name
-				avatar {
-					url
-				}
-				email
-				lastName
-				firstName
-			}
-		}
-	}
+    login(
+      input: {
+        clientMutationId: "uniqueId"
+        username: $username
+        password: $password
+      }
+    ) {
+      authToken
+      user {
+        id
+        userId
+        name
+        avatar {
+          url
+        }
+        email
+        lastName
+        firstName
+      }
+    }
+  }
 `;
 
 const register = gql`
   mutation REGISTER_USER($input: RegisterUserInput!) {
-	registerCustomer(input: $input) {
-		customer {
-		id
-		name
+    registerCustomer(input: $input) {
+      customer {
+        id
+        name
       }
-	}
+    }
   }
 `;
 
 const categories = gql`
   {
-	productCategories{
-	  nodes{
-		id
-		name
-		image{
-		  sourceUrl
-		}
-		name
-		children{
-		  nodes{
-			id
-			name
-			image{
-		  sourceUrl
-		}
-		name
-		  }
-		}
+    productCategories {
+      nodes {
+        id
+        name
+        image {
+          sourceUrl
+        }
+        name
+        children {
+          nodes {
+            id
+            name
+            image {
+              sourceUrl
+            }
+            name
+          }
+        }
       }
     }
   }
@@ -105,7 +109,7 @@ const productsSorted = orderby => gql`
 }
 `;
 
-const singleProduct = (query) => gql`
+const singleProduct = query => gql`
 query {
 	product( id: "${query}") {
 	  id
@@ -153,18 +157,18 @@ const checkout = gql`
     checkout(input: $input) {
       clientMutationId
       order {
-				id
-				refunds {
-					nodes {
-						amount
-					}
-				}
-			}
-			customer {
-				id
-			}
-			result
-			redirect
+        id
+        refunds {
+          nodes {
+            amount
+          }
+        }
+      }
+      customer {
+        id
+      }
+      result
+      redirect
     }
   }
 `;
@@ -204,7 +208,7 @@ const addToCart = (qty, id, mut) =>
 `,
   });
 
-const productsByCategories = (orderby) =>gql`
+const productsByCategories = orderby => gql`
 {
   products(first: 200, where:{categoryIn:"${orderby}"}){
     nodes {
@@ -229,7 +233,7 @@ const productsByCategories = (orderby) =>gql`
 }
 `;
 
-const searchQuery = (name) => gql`
+const searchQuery = name => gql`
 query MyQuery {
 	products(where: {search:"${name}"}){
 	  nodes{
@@ -251,7 +255,7 @@ query MyQuery {
 	  }
 	}
   }
-  `
+  `;
 
 export {
   login,
