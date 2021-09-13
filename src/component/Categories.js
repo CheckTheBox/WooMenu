@@ -1,60 +1,110 @@
 import React from 'react';
 import {TouchableHighlight} from 'react-native';
 
-import {Button} from '@ui-kitten/components';
 import {Text} from '@ui-kitten/components';
 import {TouchableOpacity, Image} from 'react-native';
 import {ImageBackground} from 'react-native';
-import {View} from 'react-native';
 
 // TODO: здесь должна быть обложка категории
 function CarC(props) {
-  return (
-    <TouchableOpacity
-      style={{
-        height: 210,
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 20,
-        shadowColor: '#000',
-        shadowOffset: {
-          width: 12,
-          height: 12,
-        },
-        margin: 4,
-        shadowOpacity: 0.58,
-        shadowRadius: 16.0,
-        elevation: 24,
-      }}
-      onPress={() =>
-        props.navigation.navigate('CatDetail', {data: props.data})
-      }>
-      <ImageBackground
+  try {
+    return (
+      <TouchableOpacity
         style={{
+          height: 210,
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
-          padding: 0,
-          width: '95%',
-          height: '95%',
-          resizeMode: 'cover',
+          borderRadius: 20,
+          shadowColor: '#000',
+          shadowOffset: {
+            width: 12,
+            height: 12,
+          },
+          margin: 4,
+          shadowOpacity: 0.58,
+          shadowRadius: 16.0,
+          elevation: 24,
         }}
-        source={{uri: props.data.image.sourceUrl}}>
-        <Text
+        onPress={() =>
+          props.navigation.navigate('CatDetail', {data: props.data})
+        }>
+        <ImageBackground
           style={{
-            color: 'white',
-            fontSize: 24,
-            lineHeight: 32,
-            fontWeight: 'bold',
-            textAlign: 'center',
-            backgroundColor: '#00000090',
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 0,
+            width: '95%',
+            height: '95%',
+            resizeMode: 'cover',
+          }}
+          source={{uri: props.data.image.sourceUrl}}>
+          <Text
+            style={{
+              color: 'white',
+              fontSize: 24,
+              lineHeight: 32,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              backgroundColor: '#00000090',
+            }}>
+            {props.data.name}
+          </Text>
+        </ImageBackground>
+      </TouchableOpacity>
+    );
+  } catch (e) {
+    return (
+      <TouchableOpacity
+        style={{
+          height: 210,
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: 20,
+          shadowColor: '#000',
+          shadowOffset: {
+            width: 12,
+            height: 12,
+          },
+          margin: 4,
+          shadowOpacity: 0.58,
+          shadowRadius: 16.0,
+          elevation: 24,
+        }}
+        onPress={() =>
+          props.navigation.navigate('CatDetail', {data: props.data})
+        }>
+        <ImageBackground
+          style={{
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 0,
+            width: '95%',
+            height: '95%',
+            resizeMode: 'cover',
+          }}
+          source={{
+            uri:
+              'http://185.230.205.140/wp-content/uploads/2021/09/original.jpg"',
           }}>
-          {props.data.name}
-        </Text>
-      </ImageBackground>
-    </TouchableOpacity>
-  );
+          <Text
+            style={{
+              color: 'white',
+              fontSize: 24,
+              lineHeight: 32,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              backgroundColor: '#00000090',
+            }}>
+            {props.data.name}
+          </Text>
+        </ImageBackground>
+      </TouchableOpacity>
+    );
+  }
 }
 
 export default CarC;

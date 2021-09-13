@@ -65,7 +65,7 @@ class Cate extends Component {
             <FlatList
               data={this.state.entries}
               renderItem={this._renderItem}
-              numColumns={1}
+              numColumns={2}
             />
           </View>
         </ScrollView>

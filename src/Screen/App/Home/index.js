@@ -16,7 +16,7 @@ class Home extends Component {
     this.state = {
       search: '',
       user: '',
-      entries: [1, 2, 1, 1, 1, 1, 1, 1, 1],
+      entries: [],
     };
     this._bootstrapAsync();
   }

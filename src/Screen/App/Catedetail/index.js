@@ -103,6 +103,15 @@ class CatDetail extends Component {
       flex: 1,
     },
   });
+  abc: any;
+  set_a() {
+    if (this.state.where != null) {
+      this.abc = this.state.where;
+    } else {
+      this.abc = this.state.data.name;
+    }
+    return this.abc;
+  }
   render() {
     return (
       <Layout style={this.style.ViewStyle}>
@@ -126,8 +135,8 @@ class CatDetail extends Component {
 
           <GetProducts
             title={this.state.data.name.toUpperCase()}
+            orderby={this.set_a()}
             // orderby={this.state.where}
-            orderby={this.state.data.name}
             render={this._renderItem}
           />
         </ScrollView>

@@ -44,9 +44,11 @@ const CheckoutCard = ({data, ind, index, dispatch}) => {
           <Text style={{top: 5, left: 10, fontFamily: 'Montserrat-Light'}} />
           <View style={{flexDirection: 'row-reverse', flex: 1}}>
             <Text style={{top: 5, left: 10, fontFamily: 'Montserrat-Light'}}>
-              {data[1].price}
-              {' $' +
-                parseInt(data[1].price.replace('$', '')) * parseInt(ind.Q)}
+              {parseInt(ind.Q) +
+                ' x ' +
+                parseInt(data[1].price.replace(' ', '')) +
+                '   =   '}
+              {parseInt(data[1].price.replace(' ', '')) * parseInt(ind.Q)}
             </Text>
           </View>
         </View>

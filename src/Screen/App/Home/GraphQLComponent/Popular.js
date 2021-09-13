@@ -63,7 +63,7 @@ const GetPop = props => {
             onPress={() =>
               props.navigation.navigate('Detail', {orderby: props.orderby})
             }>
-            more
+            больше
           </Text>
         </View>
       </View>

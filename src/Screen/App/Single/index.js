@@ -10,7 +10,7 @@ class Single extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      q: 0,
+      q: 1,
       loading: false,
     };
   }
@@ -54,7 +54,7 @@ class Single extends Component {
             });
             this.setState({loading: false});
           }}>
-          ADD to Cart
+          Добавить в корзину
         </Button>
       </View>
     );

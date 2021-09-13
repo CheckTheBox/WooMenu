@@ -18,7 +18,7 @@ class Detail extends Component {
     this.state = {
       search: '',
       cart: true,
-      entries: [1, 2, 3, 4, 5, 6, 7],
+      entries: [],
     };
   }
   updateSearch = search => {
@@ -33,7 +33,20 @@ class Detail extends Component {
     },
   });
   render() {
-    return <Layout style={this.style.ViewStyle} />;
+    return (
+      <Layout style={this.style.ViewStyle}>
+        <View style={{backgroundColor: 'transparent', paddingBottom: 20}}>
+          <HeaderC heading={'Products'} navigation={this.props.navigation} />
+          <SearchC />
+        </View>
+        <ScrollView style={{flex: 1}}>
+          <GetProducts
+            orderby={this.props.route.params?.orderby ?? 0}
+            render={this._renderItem}
+          />
+        </ScrollView>
+      </Layout>
+    );
   }
 }
 export default Detail;

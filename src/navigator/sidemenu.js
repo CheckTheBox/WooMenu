@@ -34,7 +34,7 @@ const Header = props => (
 const drawerData = [
   {title: 'Главная страница', route: 'Home'},
   // {title: 'Profile', route: 'Home'},
-  {title: 'Категории', route: 'Cate'},
+  // {title: 'Категории', route: 'Cate'},
   {title: 'Корзина', route: 'Cart'},
   {title: 'Тема', route: 'Settings'},
 ];
@@ -67,7 +67,7 @@ function SideMenu(props) {
 
             // RootNavigation.navigate('Auth');
           }}>
-          LogOut
+          Выйти
         </Button>
       </Layout>
     </DrawerContentScrollView>

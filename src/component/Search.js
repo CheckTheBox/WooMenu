@@ -30,7 +30,7 @@ function SearchC(props){
       onSubmitEditing={onsub}
       icon={(style)=>( <Icon {...style} name={'search-outline'}/>)}
 
-      placeholder="Looking for something"
+      placeholder="Поищем?"
       onChangeText={(e) => updateSearch(e)}
       value={search}
       platform={"android"}

@@ -22,7 +22,7 @@ export const Footer = ({item, onPress}) => {
   return (
     <React.Fragment>
       <Button onPress={onPress} style={{flex: 1}}>
-        {item.item.price}
+        {item.item.price.replace('&nbsp;', ' ')}
       </Button>
     </React.Fragment>
   );

@@ -39,7 +39,7 @@ const GetProducts = props => {
               fontSize: 13,
               fontFamily: 'Montserrat-SemiBold',
             }}>
-            filter
+            фильтр
           </Text>
         </View>
       </View>

@@ -13,7 +13,7 @@ class Cart extends React.Component {
     };
   }
   MakeTotal = amount => {
-    total = amount;
+    this.total = amount;
   };
   style = StyleSheet.create({
     ViewStyle: {
@@ -67,11 +67,11 @@ class Cart extends React.Component {
         <HeaderC navigation={this.props.navigation} />
         <ScrollView style={{flex: 1}}>
           <Text h2 style={{marginLeft: 20, fontFamily: 'Montserrat-Bold'}}>
-            Check Out
+            Корзина
           </Text>
           <GetProducts MakeTotal={this.MakeTotal} Cart={this.props.Cart.cart} />
         </ScrollView>
-        <this.Footer />
+        {/*<this.Footer />*/}
       </Layout>
     );
   }
