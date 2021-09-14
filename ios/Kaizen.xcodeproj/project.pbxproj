@@ -8,14 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* WooShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WooShopTests.m */; };
+		0387AC2CBF9A4566B36C7653 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55850EC2F1644CDAAFDF2B7 /* Montserrat-Light.ttf */; };
+		08A0E1BE75D0469189292E42 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D9D145D498F8858F82C /* Montserrat-ExtraLight.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4A7C9AE526E7039A009910E0 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55850EC2F1644CDAAFDF2B7 /* Montserrat-Light.ttf */; };
-		4AE7AACE26D971EE00D7472A /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 061D8186F6F842938E6A3CCF /* Montserrat-Bold.ttf */; };
-		4AE7AACF26D971F700D7472A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF26B95FF6E5427E9791C7F4 /* Montserrat-SemiBold.ttf */; };
-		98E81ACC9815B05EEA78B466 /* libPods-WooShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C04AA1A07DE6B23C1E76289E /* libPods-WooShop.a */; };
+		169F5040813242A8A5FF3AD7 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3ED6F9EF23F243E29A983610 /* Montserrat-BlackItalic.ttf */; };
+		1A6DDBBCC7C545F1A7B7B8AB /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 851006E4212E4A129D4A1FBD /* Montserrat-Medium.ttf */; };
+		1C9CBA6C76094A8D89BB7A63 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865FEF31711540A8897C028E /* Montserrat-SemiBoldItalic.ttf */; };
+		1F63731AE3A24E1C8C03A62B /* Montserrat-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7B57E75C6F433DA3FC01A6 /* Montserrat-RegularItalic.ttf */; };
+		28AB20E6F9234C948FEC8208 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 061D8186F6F842938E6A3CCF /* Montserrat-Bold.ttf */; };
+		2C207151CFD74B968A3AFB43 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB30E0BEEF8641CBAA9F6130 /* Montserrat-ExtraBoldItalic.ttf */; };
+		44BE9E71658B45D6AAE319CF /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2E6E469984A3ABA2B9F9E /* Montserrat-BoldItalic.ttf */; };
+		4794F963CD258B1D5754D5EC /* libPods-WooShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F81A42A828259B296CCCF967 /* libPods-WooShop.a */; };
+		4D4030AE20134624BB1B578C /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8D887471DEC48039639D6D4 /* Montserrat-Black.ttf */; };
+		600A99AEA7A74626873B1F2C /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB1549C20B148A5BFF0A894 /* Montserrat-ThinItalic.ttf */; };
+		745758E9A42E433690EFA139 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07A5A3C65F734A658D24FE11 /* Montserrat-Thin.ttf */; };
+		9D92514C82FC45AC81A62C62 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A5ECE2DDC146C281181817 /* Montserrat-ExtraLightItalic.ttf */; };
+		B3719B85F80040B6A0A22D76 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF26B95FF6E5427E9791C7F4 /* Montserrat-SemiBold.ttf */; };
+		B718C150918698F1BDA293E7 /* libPods-WooShopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D0745AD10F9CA81848B7AE /* libPods-WooShopTests.a */; };
+		BEDCE5A1C1034B6FB29F60E6 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F915A2C257A49ABA61C6CCB /* Montserrat-MediumItalic.ttf */; };
+		D7F4896A1218435088A3EF7A /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2478D3E86B1A4B079E40D305 /* Montserrat-ExtraBold.ttf */; };
+		E874888E41D14D43A8934517 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C870D2E74A446FE9D814023 /* Montserrat-Regular.ttf */; };
+		F21CC2737C53420BAB7A8EF7 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7A01CEAD69B41DD94796CD6 /* Montserrat-LightItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* Kaizen MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kaizen MenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* KaizenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WooShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WooShopTests.m; sourceTree = "<group>"; };
 		0337B3EBEC5640B3AE5B9B04 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -41,34 +57,38 @@
 		08B3207CE52E4E5DB5E8CC51 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		09DF1A485DE643F289B91660 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		0C579A7EADE74A688D68767D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Kaizen Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaizen Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Kaizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaizen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WooShop/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WooShop/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WooShop/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WooShop/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WooShop/main.m; sourceTree = "<group>"; };
-		1BDC1E937D8EE2802BDA1FD8 /* Pods-WooShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop.debug.xcconfig"; path = "Target Support Files/Pods-WooShop/Pods-WooShop.debug.xcconfig"; sourceTree = "<group>"; };
 		1C7B57E75C6F433DA3FC01A6 /* Montserrat-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-RegularItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-RegularItalic.ttf"; sourceTree = "<group>"; };
 		1C870D2E74A446FE9D814023 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		1D24DF7C2660437EB02597E5 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-Regular.ttf"; path = "../assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		2478D3E86B1A4B079E40D305 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		2BF20657AF044306896C6635 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		35AEA9EC30DC47CCA17765B6 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		38289DBC7D4D9119BB2F7A05 /* Pods-WooShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop.release.xcconfig"; path = "Target Support Files/Pods-WooShop/Pods-WooShop.release.xcconfig"; sourceTree = "<group>"; };
 		3BAF00CA50D4409AB1819E31 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AbrilFatface-Regular.ttf"; path = "../assets/fonts/Abril_Fatface/AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
 		3CED2D1D611745F58E1F5D7A /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3D39E93DBBF4F870131AE0B3 /* Pods-WooShop-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WooShop-tvOSTests/Pods-WooShop-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3ED6F9EF23F243E29A983610 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BlackItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
-		3F2B09B1DE276F1F5D35613D /* libPods-WooShop-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShop-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F915A2C257A49ABA61C6CCB /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-MediumItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		474B7707CE474802B08B8977 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		4BFB033B3258463288C7AAF8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		4C36E5C28BCD09E486F00F6B /* libPods-WooShop-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShop-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51876328D550429A9342605B /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		530410503D37B2169F10211A /* Pods-WooShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop.release.xcconfig"; path = "Target Support Files/Pods-WooShop/Pods-WooShop.release.xcconfig"; sourceTree = "<group>"; };
 		58443D7827A24BDAA13E7003 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins/Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		5C55EA08B7F20F6436775F47 /* Pods-WooShop-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WooShop-tvOSTests/Pods-WooShop-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6001F182441B434F8314517B /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		6413EC57D5FB42CAA5502AD8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		6C2BFB7DE58544D591DA845D /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-BlackItalic.ttf"; path = "../assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		70579A0C68900C8752E53776 /* Pods-WooShop-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WooShop-tvOS/Pods-WooShop-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		771F835ABD244E0E9DC56CF3 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		78D0745AD10F9CA81848B7AE /* libPods-WooShopTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShopTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7923F5876F9A58F17AA319BE /* Pods-WooShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop.debug.xcconfig"; path = "Target Support Files/Pods-WooShop/Pods-WooShop.debug.xcconfig"; sourceTree = "<group>"; };
 		7A8F551CE1704933A3CA77D6 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		7AB1549C20B148A5BFF0A894 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ThinItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		7E25EDFCBE06498D91376AD8 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-Bold.ttf"; path = "../assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
@@ -77,10 +97,10 @@
 		851006E4212E4A129D4A1FBD /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		865FEF31711540A8897C028E /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBoldItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		86B193D8F511441A91237EE6 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		934B3A53ADA4CD72C7D374D8 /* Pods-WooShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShopTests.debug.xcconfig"; path = "Target Support Files/Pods-WooShopTests/Pods-WooShopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		997724E1BFDC400A9E09B6FA /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		9A133D9D145D498F8858F82C /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		A596BF9C87764361BC5781E3 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		A5BF6C7CE789CCEDAC494027 /* libPods-WooShop-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShop-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A01CEAD69B41DD94796CD6 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-LightItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		AAC2E6E469984A3ABA2B9F9E /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BoldItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		B1EE8172C8BD418CB01153A5 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins/Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -89,14 +109,14 @@
 		B8D887471DEC48039639D6D4 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		BBF879C2C4084EB499A43315 /* Poppins-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-RegularItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-RegularItalic.ttf"; sourceTree = "<group>"; };
 		BE9F2C90EAC64B08861C54C1 /* PlayfairDisplay-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-RegularItalic.ttf"; path = "../assets/fonts/Playfair_Display/PlayfairDisplay-RegularItalic.ttf"; sourceTree = "<group>"; };
-		C04AA1A07DE6B23C1E76289E /* libPods-WooShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66F68A742D668BFAB7A5F30 /* Pods-WooShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShopTests.release.xcconfig"; path = "Target Support Files/Pods-WooShopTests/Pods-WooShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF26B95FF6E5427E9791C7F4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		D0E99E7C9D344E8C8AF017D8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		D55850EC2F1644CDAAFDF2B7 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		D7F08B15F0294AC092B5EA87 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-BoldItalic.ttf"; path = "../assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		DA674C30321357B0F0F032C2 /* Pods-WooShop-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShop-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WooShop-tvOS/Pods-WooShop-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		DFB74749524C4186B05EF868 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		E00C26E6A11A4D5F91DAAB14 /* Anton-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Anton-Regular.ttf"; path = "../assets/fonts/Anton/Anton-Regular.ttf"; sourceTree = "<group>"; };
-		E4E8B4AFDC700B3089E25CC6 /* Pods-WooShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShopTests.release.xcconfig"; path = "Target Support Files/Pods-WooShopTests/Pods-WooShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7A5ECE2DDC146C281181817 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLightItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		E7CB90401EEC450AA67AF64C /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../assets/fonts/Poppins/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		E80883B05C03492E998907FA /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
@@ -105,9 +125,10 @@
 		EB30E0BEEF8641CBAA9F6130 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		ED4EB0EDB3EF456E8D12723F /* libPods-WooShop-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShop-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F061C9C610504350A49BC32E /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins/Poppins-Black.ttf"; sourceTree = "<group>"; };
+		F14D47E88382A49B398E09AE /* Pods-WooShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooShopTests.debug.xcconfig"; path = "Target Support Files/Pods-WooShopTests/Pods-WooShopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6904076C6FD469D9B78600E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		F81A42A828259B296CCCF967 /* libPods-WooShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WooShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99099D7E4F4860A4CFAD8C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B718C150918698F1BDA293E7 /* libPods-WooShopTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E81ACC9815B05EEA78B466 /* libPods-WooShop.a in Frameworks */,
+				4794F963CD258B1D5754D5EC /* libPods-WooShop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,27 +183,32 @@
 			name = WooShop;
 			sourceTree = "<group>";
 		};
-		22780E6391247A2E9A30CECC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1BDC1E937D8EE2802BDA1FD8 /* Pods-WooShop.debug.xcconfig */,
-				530410503D37B2169F10211A /* Pods-WooShop.release.xcconfig */,
-				934B3A53ADA4CD72C7D374D8 /* Pods-WooShopTests.debug.xcconfig */,
-				E4E8B4AFDC700B3089E25CC6 /* Pods-WooShopTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				C04AA1A07DE6B23C1E76289E /* libPods-WooShop.a */,
-				ED4EB0EDB3EF456E8D12723F /* libPods-WooShop-tvOS.a */,
-				3F2B09B1DE276F1F5D35613D /* libPods-WooShop-tvOSTests.a */,
+				F81A42A828259B296CCCF967 /* libPods-WooShop.a */,
+				A5BF6C7CE789CCEDAC494027 /* libPods-WooShop-tvOS.a */,
+				4C36E5C28BCD09E486F00F6B /* libPods-WooShop-tvOSTests.a */,
+				78D0745AD10F9CA81848B7AE /* libPods-WooShopTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BAA81688B0EE80AE302C7DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7923F5876F9A58F17AA319BE /* Pods-WooShop.debug.xcconfig */,
+				38289DBC7D4D9119BB2F7A05 /* Pods-WooShop.release.xcconfig */,
+				70579A0C68900C8752E53776 /* Pods-WooShop-tvOS.debug.xcconfig */,
+				DA674C30321357B0F0F032C2 /* Pods-WooShop-tvOS.release.xcconfig */,
+				5C55EA08B7F20F6436775F47 /* Pods-WooShop-tvOSTests.debug.xcconfig */,
+				3D39E93DBBF4F870131AE0B3 /* Pods-WooShop-tvOSTests.release.xcconfig */,
+				F14D47E88382A49B398E09AE /* Pods-WooShopTests.debug.xcconfig */,
+				C66F68A742D668BFAB7A5F30 /* Pods-WooShopTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -200,7 +227,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				98A79CDED37F4D89AEF51550 /* Resources */,
-				22780E6391247A2E9A30CECC /* Pods */,
+				5BAA81688B0EE80AE302C7DC /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -210,8 +237,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Kaizen Menu.app */,
-				00E356EE1AD99517003FC87E /* Kaizen MenuTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Kaizen.app */,
+				00E356EE1AD99517003FC87E /* KaizenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,11 +313,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* Kaizen MenuTests */ = {
+		00E356ED1AD99517003FC87E /* KaizenTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Kaizen MenuTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KaizenTests" */;
 			buildPhases = (
-				567E59D983DB70798A0B4A8A /* [CP] Check Pods Manifest.lock */,
+				43A87EB2650491768D9BBFE7 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -300,30 +327,30 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = "Kaizen MenuTests";
+			name = KaizenTests;
 			productName = WooShopTests;
-			productReference = 00E356EE1AD99517003FC87E /* Kaizen MenuTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* KaizenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Kaizen Menu */ = {
+		13B07F861A680F5B00A75B9A /* Kaizen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kaizen Menu" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kaizen" */;
 			buildPhases = (
-				6D701FC8ACFBBCF30BE83C8A /* [CP] Check Pods Manifest.lock */,
+				921C6F65B1C4A3876FBB48CD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5B3B306DD0C32EC67FE3B6E3 /* [CP] Copy Pods Resources */,
+				4D55A7A042EB38DE25AFDD10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Kaizen Menu";
+			name = Kaizen;
 			productName = WooShop;
-			productReference = 13B07F961A680F5B00A75B9A /* Kaizen Menu.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Kaizen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +372,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen Menu" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -359,8 +386,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Kaizen Menu */,
-				00E356ED1AD99517003FC87E /* Kaizen MenuTests */,
+				13B07F861A680F5B00A75B9A /* Kaizen */,
+				00E356ED1AD99517003FC87E /* KaizenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,11 +404,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7C9AE526E7039A009910E0 /* Montserrat-Light.ttf in Resources */,
-				4AE7AACF26D971F700D7472A /* Montserrat-SemiBold.ttf in Resources */,
-				4AE7AACE26D971EE00D7472A /* Montserrat-Bold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				4D4030AE20134624BB1B578C /* Montserrat-Black.ttf in Resources */,
+				169F5040813242A8A5FF3AD7 /* Montserrat-BlackItalic.ttf in Resources */,
+				28AB20E6F9234C948FEC8208 /* Montserrat-Bold.ttf in Resources */,
+				44BE9E71658B45D6AAE319CF /* Montserrat-BoldItalic.ttf in Resources */,
+				D7F4896A1218435088A3EF7A /* Montserrat-ExtraBold.ttf in Resources */,
+				2C207151CFD74B968A3AFB43 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				08A0E1BE75D0469189292E42 /* Montserrat-ExtraLight.ttf in Resources */,
+				9D92514C82FC45AC81A62C62 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				0387AC2CBF9A4566B36C7653 /* Montserrat-Light.ttf in Resources */,
+				F21CC2737C53420BAB7A8EF7 /* Montserrat-LightItalic.ttf in Resources */,
+				1A6DDBBCC7C545F1A7B7B8AB /* Montserrat-Medium.ttf in Resources */,
+				BEDCE5A1C1034B6FB29F60E6 /* Montserrat-MediumItalic.ttf in Resources */,
+				E874888E41D14D43A8934517 /* Montserrat-Regular.ttf in Resources */,
+				1F63731AE3A24E1C8C03A62B /* Montserrat-RegularItalic.ttf in Resources */,
+				B3719B85F80040B6A0A22D76 /* Montserrat-SemiBold.ttf in Resources */,
+				1C9CBA6C76094A8D89BB7A63 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				745758E9A42E433690EFA139 /* Montserrat-Thin.ttf in Resources */,
+				600A99AEA7A74626873B1F2C /* Montserrat-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +444,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		567E59D983DB70798A0B4A8A /* [CP] Check Pods Manifest.lock */ = {
+		43A87EB2650491768D9BBFE7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,7 +466,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B3B306DD0C32EC67FE3B6E3 /* [CP] Copy Pods Resources */ = {
+		4D55A7A042EB38DE25AFDD10 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,7 +516,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WooShop/Pods-WooShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6D701FC8ACFBBCF30BE83C8A /* [CP] Check Pods Manifest.lock */ = {
+		921C6F65B1C4A3876FBB48CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,7 +582,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Kaizen Menu */;
+			target = 13B07F861A680F5B00A75B9A /* Kaizen */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -560,17 +602,16 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 934B3A53ADA4CD72C7D374D8 /* Pods-WooShopTests.debug.xcconfig */;
+			baseConfigurationReference = F14D47E88382A49B398E09AE /* Pods-WooShopTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = WooShopTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -579,20 +620,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen Menu.app/Kaizen Menu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen.app/Kaizen";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4E8B4AFDC700B3089E25CC6 /* Pods-WooShopTests.release.xcconfig */;
+			baseConfigurationReference = C66F68A742D668BFAB7A5F30 /* Pods-WooShopTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 57YL9YZT2D;
 				INFOPLIST_FILE = WooShopTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -601,13 +641,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen Menu.app/Kaizen Menu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen.app/Kaizen";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BDC1E937D8EE2802BDA1FD8 /* Pods-WooShop.debug.xcconfig */;
+			baseConfigurationReference = 7923F5876F9A58F17AA319BE /* Pods-WooShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -620,8 +660,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.mikagroup.kaizenmenu;
-				PRODUCT_NAME = "Kaizen Menu";
+				PRODUCT_BUNDLE_IDENTIFIER = astafeev.kaizen;
+				PRODUCT_NAME = Kaizen;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -629,7 +669,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 530410503D37B2169F10211A /* Pods-WooShop.release.xcconfig */;
+			baseConfigurationReference = 38289DBC7D4D9119BB2F7A05 /* Pods-WooShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -641,8 +681,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.mikagroup.kaizenmenu;
-				PRODUCT_NAME = "Kaizen Menu";
+				PRODUCT_BUNDLE_IDENTIFIER = astafeev.kaizen;
+				PRODUCT_NAME = Kaizen;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -677,7 +717,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -695,7 +734,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -731,7 +770,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -742,7 +780,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -752,7 +790,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Kaizen MenuTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KaizenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -761,7 +799,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kaizen Menu" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kaizen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -770,7 +808,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen Menu" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

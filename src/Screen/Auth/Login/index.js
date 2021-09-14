@@ -16,8 +16,8 @@ const Login = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
 
-  const [username, setusername] = useState('');
-  const [password, setpassword] = useState('');
+  const [username, setusername] = useState('admin');
+  const [password, setpassword] = useState('Adm8n0ass');
   const [error, seterror] = useState('');
   const [loading, setloading] = useState(false);
   const [secureTextEntry, setSecureTextEntry] = React.useState(true);
@@ -68,30 +68,30 @@ const Login = () => {
         <Mutation mutation={login}>
           {(login, {data}) => (
             <View style={style.inputContainer}>
-              <Input
-                placeholder="Email"
-                style={{marginTop: 10}}
-                autoCapitalize="none"
-                onChangeText={e => setusername(e)}
-                returnKeyType={'next'}
-                onSubmitEditing={() => {
-                  secondTextInput.focus();
-                }}
-                blurOnSubmit={false}
-              />
-              <Input
-                ref={input => {
-                  secondTextInput = input;
-                }}
-                placeholder="*******"
-                style={{marginTop: 10}}
-                secureTextEntry={secureTextEntry}
-                icon={renderIcon}
-                autoCapitalize="none"
-                onIconPress={onIconPress}
-                onChangeText={e => setpassword(e)}
-                onSubmitEditing={() => Login(login)}
-              />
+              {/*<Input*/}
+              {/*  placeholder="Email"*/}
+              {/*  style={{marginTop: 10}}*/}
+              {/*  autoCapitalize="none"*/}
+              {/*  onChangeText={e => setusername(e)}*/}
+              {/*  returnKeyType={'next'}*/}
+              {/*  onSubmitEditing={() => {*/}
+              {/*    secondTextInput.focus();*/}
+              {/*  }}*/}
+              {/*  blurOnSubmit={false}*/}
+              {/*/>*/}
+              {/*<Input*/}
+              {/*  ref={input => {*/}
+              {/*    secondTextInput = input;*/}
+              {/*  }}*/}
+              {/*  placeholder="*******"*/}
+              {/*  style={{marginTop: 10}}*/}
+              {/*  secureTextEntry={secureTextEntry}*/}
+              {/*  icon={renderIcon}*/}
+              {/*  autoCapitalize="none"*/}
+              {/*  onIconPress={onIconPress}*/}
+              {/*  onChangeText={e => setpassword(e)}*/}
+              {/*  onSubmitEditing={() => Login(login)}*/}
+              {/*/>*/}
 
               <GButton
                 loading={loading}
@@ -104,10 +104,10 @@ const Login = () => {
         </Mutation>
       </View>
 
-      <ButtonC
-        Text={'REGISTER ?'}
-        onPress={() => navigation.navigate('Register')}
-      />
+      {/*<ButtonC*/}
+      {/*  Text={'REGISTER ?'}*/}
+      {/*  onPress={() => navigation.navigate('Register')}*/}
+      {/*/>*/}
     </Layout>
   );
 };
