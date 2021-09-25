@@ -14,23 +14,9 @@ class Single extends Component {
       loading: false,
     };
   }
-  onLayout = e => {
-    this.setState({
-      width: e.nativeEvent.layout.width,
-    });
-  };
-  style = StyleSheet.create({
-    ViewStyle: {
-      flex: 1,
-    },
-    TextStyle: {
-      fontSize: 30,
-      fontFamily: 'Montserrat-Bold',
-    },
-  });
 
   FooterBtn = () => {
-    const theme = useTheme();
+    // const theme = useTheme();
 
     return (
       <View
@@ -60,8 +46,24 @@ class Single extends Component {
     );
   };
 
+  onLayout = e => {
+    this.setState({
+      width: e.nativeEvent.layout.width,
+    });
+  };
+  style = StyleSheet.create({
+    ViewStyle: {
+      flex: 1,
+    },
+    TextStyle: {
+      fontSize: 30,
+      fontFamily: 'Montserrat-Bold',
+    },
+  });
+
   Footer = () => {
     const theme = useTheme();
+    const FooterBtn = this.FooterBtn();
 
     return (
       <View
@@ -97,10 +99,11 @@ class Single extends Component {
             onPress={() => this.setState({q: this.state.q - 1})}
           />
         </View>
-        <this.FooterBtn />
+        {FooterBtn}
       </View>
     );
   };
+
   render() {
     return (
       <Layout style={this.style.ViewStyle}>
@@ -118,4 +121,5 @@ class Single extends Component {
 const mapStateToProps = (state /*, ownProps*/) => {
   return {};
 };
+
 export default connect(mapStateToProps)(Single);

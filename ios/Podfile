@@ -4,8 +4,8 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 config = use_native_modules!
 
-target 'WooShop' do
-  # Pods for WooShop
+target 'Kaizen' do
+  # Pods for Kaizen
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/'
   pod 'React-Core/DevSupport', :path => '../node_modules/react-native/'
@@ -32,7 +32,7 @@ target 'WooShop' do
 
   pod 'RCTTypeSafety', :path => '../node_modules/react-native/Libraries/TypeSafety'
 
-  target 'WooShopTests' do
+  target 'KaizenTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -41,12 +41,12 @@ target 'WooShop' do
   use_react_native!(:path => config["reactNativePath"])
 end
 
-target 'WooShop-tvOS' do
-  # Pods for WooShop-tvOS
-
-  target 'WooShop-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
+#target 'Kaizen-tvOS' do
+#  # Pods for Kaizen-tvOS
+#
+#  target 'Kaizen-tvOSTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
+#
+#end

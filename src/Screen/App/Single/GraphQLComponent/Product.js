@@ -54,10 +54,10 @@ const GetProduct = props => {
   const cat = data.product?.productCategories?.nodes.map(e => e.name);
   return (
     <View>
-      <View style={{flex: 1, height: 400}} onLayout={onLayout}>
+      <View style={{flex: 1, height: 800}} onLayout={onLayout}>
         <SliderBox
           images={gal.filter(onlyUnique)}
-          sliderBoxHeight={400}
+          sliderBoxHeight={800}
           onCurrentImagePressed={index =>
             console.warn(`image ${index} pressed`)
           }
