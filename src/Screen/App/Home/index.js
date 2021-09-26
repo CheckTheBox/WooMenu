@@ -30,7 +30,7 @@ class Home extends Component {
   };
   componentDidMount() {
     axios({
-      url: 'http://185.230.205.140/graphql',
+      url: 'http://menu-kaizen.checkthebox.uz/graphql',
       method: 'post',
       data: {
         query: categories1,
@@ -56,6 +56,9 @@ class Home extends Component {
   style = StyleSheet.create({
     ViewStyle: {
       flex: 1,
+      paddingLeft: 15,
+      alignSelf: 'center',
+      // backgroundColor: '#1b3022',
     },
   });
 
@@ -67,7 +70,7 @@ class Home extends Component {
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
         </View>
-        <ScrollView style={{flex: 1}}>
+        <ScrollView>
           <View style={{marginTop: 20}}>
             <GetPop
               navigation={this.props.navigation}

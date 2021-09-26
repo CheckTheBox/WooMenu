@@ -14,25 +14,19 @@ const GetProducts = props => {
     return <Text>ERROR</Text>;
   }
   return (
-    <View style={{marginLeft: 15, marginRight: 15, marginTop: 10}}>
+    <View style={{marginTop: 10, alignSelf: 'center'}}>
       <View style={{flexDirection: 'row'}}>
-        <View style={{flex: 1}}>
+        <View
+          style={{
+            flex: 1,
+            // backgroundColor: '#1b3022'
+          }}>
           <Text
             style={{
               fontSize: 18,
               fontFamily: 'Montserrat-SemiBold',
             }}>
             {props.title}
-          </Text>
-        </View>
-
-        <View style={{flexDirection: 'row-reverse'}}>
-          <Text
-            style={{
-              fontSize: 13,
-              fontFamily: 'Montserrat-SemiBold',
-            }}>
-            фильтр
           </Text>
         </View>
       </View>

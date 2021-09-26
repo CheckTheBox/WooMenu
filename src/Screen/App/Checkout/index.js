@@ -56,7 +56,7 @@ class Checkout extends React.Component {
   falling() {
     return new Promise((resolve, rejects) => {
       this.props.Cart.cart.forEach(async element => {
-        const response = await fetch('http://185.230.205.140/graphql', {
+        const response = await fetch('http://menu-kaizen.checkthebox.uz/graphql', {
           headers: {
             'content-type': 'application/json',
             Authorization: 'Bearer ' + this.state.user.authToken,
@@ -75,7 +75,7 @@ class Checkout extends React.Component {
   }
   Login() {
     axios
-      .post('http://185.230.205.140/graphql', {
+      .post('http://menu-kaizen.checkthebox.uz/graphql', {
         query: print(Loginn),
         variables: {
           username: this.state.username,

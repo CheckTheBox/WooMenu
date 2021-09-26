@@ -24,7 +24,7 @@ class Cate extends Component {
   }
   componentDidMount() {
     axios({
-      url: 'http://185.230.205.140/graphql',
+      url: 'http://menu-kaizen.checkthebox.uz/graphql',
       method: 'post',
       data: {
         query: categories1,
@@ -60,7 +60,7 @@ class Cate extends Component {
           <SearchC />
         </View>
         <ScrollView style={{flex: 1}}>
-          <View style={{marginLeft: 15, marginRight: 15, marginTop: 10}}>
+          <View style={{alignSelf: 'center', marginTop: 10}}>
 
             <FlatList
               data={this.state.entries}

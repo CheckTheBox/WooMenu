@@ -73,6 +73,10 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.red,
+  },
   scrollView: {
     backgroundColor: Colors.lighter,
   },

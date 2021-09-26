@@ -7,6 +7,7 @@ import {
   Layout,
   Button,
 } from '@ui-kitten/components';
+import {Text} from '@ui-kitten/components';
 
 // import styles from './SideMenu.style';
 // import { ActivityIndicator } from 'react-native'
@@ -23,20 +24,28 @@ const Header = props => (
     description={props.user.user.email}
     icon={() => (
       <Image
-        style={{width: 50, height: 50}}
+        style={{
+          width: 50,
+          height: 50,
+        }}
         source={{
-          uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
+          uri:
+            'http://menu-kaizen.checkthebox.uz/wp-content/uploads/2021/09/kaizen.logo_.png',
+          // uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
         }}
       />
     )}
   />
 );
 const drawerData = [
-  {title: 'Главная страница', route: 'Home'},
+  {
+    title: <Text style={{fontSize: 20}}>Главная страница</Text>,
+    route: 'Home',
+  },
   // {title: 'Profile', route: 'Home'},
   // {title: 'Категории', route: 'Cate'},
-  {title: 'Корзина', route: 'Cart'},
-  {title: 'Тема', route: 'Settings'},
+  {title: <Text style={{fontSize: 20}}>Корзина</Text>, route: 'Cart'},
+  {title: <Text style={{fontSize: 20}}>Тема</Text>, route: 'Settings'},
 ];
 
 const onRouteSelect = async index => {
@@ -54,7 +63,11 @@ function SideMenu(props) {
 
   return (
     <DrawerContentScrollView contentContainerStyle={{flex: 1}} {...props}>
-      <Layout style={{flex: 1}}>
+      <Layout
+        style={{
+          flex: 1,
+          // backgroundColor: '#1b3022'
+        }}>
         <Drawer
           data={drawerData}
           header={() => <Header user={props.user} />}

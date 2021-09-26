@@ -19,8 +19,8 @@ import {
   useTheme,
 } from '@ui-kitten/components';
 import {EvaIconsPack} from '@ui-kitten/eva-icons';
-import {mapping, light, dark} from '@eva-design/eva';
-// import { default as dark } from './custom-theme.json'; // <-- Import app theme
+import {mapping} from '@eva-design/eva';
+import {dark, light} from './custom-theme'; // <-- Import app theme
 import {ThemeContext} from './theme-context';
 
 const themes = {light, dark};
@@ -43,7 +43,7 @@ persistCache({
 });
 
 const client = new ApolloClient({
-  uri: 'http://185.230.205.140/graphql',
+  uri: 'http://menu-kaizen.checkthebox.uz/graphql',
   cache,
 });
 

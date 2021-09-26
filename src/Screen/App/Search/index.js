@@ -22,6 +22,7 @@ class Search extends Component {
   style = StyleSheet.create({
     ViewStyle: {
       flex: 1,
+      // backgroundColor: '#1b3022',
     },
   });
   render() {

@@ -20,7 +20,7 @@ const GetProducts = props => {
     return <Text>ERROR</Text>;
   }
   return (
-    <View style={{marginLeft: 15, marginRight: 15, marginTop: 10}}>
+    <View style={{alignSelf: 'center', marginTop: 10}}>
       <View style={{flexDirection: 'row'}}>
         <View style={{flex: 1}}>
           <Text
@@ -29,17 +29,6 @@ const GetProducts = props => {
               fontFamily: 'Montserrat-SemiBold',
             }}>
             {dataa.title}
-          </Text>
-        </View>
-
-        <View style={{flexDirection: 'row-reverse'}}>
-          <Text
-            status="danger"
-            style={{
-              fontSize: 13,
-              fontFamily: 'Montserrat-SemiBold',
-            }}>
-            фильтр
           </Text>
         </View>
       </View>

@@ -1,5 +1,5 @@
-import { createStore } from 'redux'
-import Auth from '../Reducer'
+import {createStore} from 'redux';
+import Auth from '../Reducer';
 
-const store = createStore(Auth)
-export default store
+const store = createStore(Auth);
+export default store;

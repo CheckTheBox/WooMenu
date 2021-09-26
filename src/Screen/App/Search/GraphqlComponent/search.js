@@ -17,7 +17,7 @@ const SearchQuery = (props) => {
   
   const items = data.products.nodes
   return (
-    <View style={{flex:1,justifyContent:'center',alignItems:'center'}} >
+    <View style={{flex:1,justifyContent:'center',alignItems:'center', alignSelf: 'center'}} >
      
           <FlatList
         data={items}

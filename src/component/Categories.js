@@ -15,7 +15,7 @@ function CarC(props) {
           justifyContent: 'center',
           alignItems: 'center',
           borderRadius: 20,
-          shadowColor: '#000',
+          shadowColor: '#000000',
           shadowOffset: {
             width: 12,
             height: 12,
@@ -81,13 +81,13 @@ function CarC(props) {
             justifyContent: 'center',
             alignItems: 'center',
             padding: 0,
-            width: '95%',
-            height: '95%',
+            width: '100%',
+            height: '100%',
             resizeMode: 'cover',
           }}
           source={{
             uri:
-              'http://185.230.205.140/wp-content/uploads/2021/09/original.jpg"',
+              'http://menu-kaizen.checkthebox.uz/wp-content/uploads/2021/09/original.jpg"',
           }}>
           <Text
             style={{
