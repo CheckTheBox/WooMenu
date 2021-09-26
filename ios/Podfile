@@ -1,4 +1,4 @@
-platform :ios, '12.1'
+platform :ios, '13.6'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
@@ -40,13 +40,3 @@ target 'Kaizen' do
   use_native_modules!
   use_react_native!(:path => config["reactNativePath"])
 end
-
-#target 'Kaizen-tvOS' do
-#  # Pods for Kaizen-tvOS
-#
-#  target 'Kaizen-tvOSTests' do
-#    inherit! :search_paths
-#    # Pods for testing
-#  end
-#
-#end
