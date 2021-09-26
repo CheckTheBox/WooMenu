@@ -5,7 +5,6 @@ import {Text} from '@ui-kitten/components';
 import {TouchableOpacity, Image} from 'react-native';
 import {ImageBackground} from 'react-native';
 
-// TODO: здесь должна быть обложка категории
 function CarC(props) {
   try {
     return (

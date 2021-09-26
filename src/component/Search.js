@@ -1,46 +1,37 @@
-import React, { useState } from "react";
-import { View } from "react-native";
-import { withNavigation } from '@react-navigation/compat'
-import { Input, Icon } from "@ui-kitten/components";
+import React, {useState} from 'react';
+import {View} from 'react-native';
+import {withNavigation} from '@react-navigation/compat';
+import {Input, Icon} from '@ui-kitten/components';
 
-
-
-function SearchC(props){
+function SearchC(props) {
   const [search, setsearch] = useState('');
   const [visible, setvisible] = useState('');
   const updateSearch = searchh => {
-    setsearch( searchh );
+    setsearch(searchh);
   };
 
   const onsub = e => {
-    if(props.self == true){
-      props.return(search)
-    }else{
-
-      props.navigation.navigate('Search',{input : search})
+    if (props.self == true) {
+      props.return(search);
+    } else {
+      props.navigation.navigate('Search', {input: search});
     }
-  }
+  };
 
-
-  return(
+  return (
     <View>
-    {/* <SearchQuery/> */}
-    <Input
-    style={{paddingLeft:10,paddingRight:10}}
-      onSubmitEditing={onsub}
-      icon={(style)=>( <Icon {...style} name={'search-outline'}/>)}
-
-      placeholder="Поищем?"
-      onChangeText={(e) => updateSearch(e)}
-      value={search}
-      platform={"android"}
-    />
- 
-  </View>
-  )
+      {/* <SearchQuery/> */}
+      <Input
+        style={{paddingLeft: 10, paddingRight: 10}}
+        onSubmitEditing={onsub}
+        icon={style => <Icon {...style} name={'search-outline'} />}
+        placeholder="Поищем?"
+        onChangeText={e => updateSearch(e)}
+        value={search}
+        platform={'android'}
+      />
+    </View>
+  );
 }
 
-
-
-
-export default withNavigation(SearchC)
+export default withNavigation(SearchC);
