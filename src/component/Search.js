@@ -22,7 +22,7 @@ function SearchC(props) {
     <View>
       {/* <SearchQuery/> */}
       <Input
-        style={{paddingLeft: 10, paddingRight: 10}}
+        style={{paddingLeft: 15, paddingRight: 15}}
         onSubmitEditing={onsub}
         icon={style => <Icon {...style} name={'search-outline'} />}
         placeholder="Поищем?"

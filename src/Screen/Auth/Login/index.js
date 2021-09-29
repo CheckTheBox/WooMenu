@@ -44,10 +44,10 @@ const Login = () => {
       <View style={{flex: 1}}>
         <Layout level={'4'} style={{height: 300}}>
           <Image
-            style={{flex: 1}}
+            style={{flex: 1, height: 300}}
             source={{
               uri:
-                'http://menu-kaizen.checkthebox.uz/wp-content/uploads/2021/09/Снимок-экрана-2021-09-26-в-15.50.19.png',
+                'http://185.230.205.140/wp-content/uploads/2021/09/Снимок-экрана-2021-09-26-в-15.50.19.png',
               // 'https://img.indiefolio.com/fit-in/1100x0/filters:format(webp):fill(transparent)/project/body/388476be0eff4cc3096f58e67d81bac0.jpg',
             }}
           />

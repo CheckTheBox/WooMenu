@@ -1,5 +1,5 @@
 import ButtonC from './Button';
-import CarC from './Categories';
+import {CarC} from './Categories';
 import CheckoutCard from './CheckoutCard';
 import GButton from './GButton';
 import HeaderC from './header';

@@ -1,5 +1,4 @@
 import Login from './Auth/Login';
-import Register from './Auth/Register';
 import Home from './App/Home';
 import Detail from './App/Detail';
 import Single from './App/Single';
@@ -12,7 +11,6 @@ import Search from './App/Search';
 
 export {
   Login,
-  Register,
   Home,
   Detail,
   Single,

@@ -69,7 +69,50 @@ const categories1 = `
 		image{
 		  sourceUrl
 		}
+		databaseId
+		children{
+		  nodes{
+			id
+			name
+			image{
+		  sourceUrl
+		}
 		name
+		  }
+		}
+	  }
+	}
+  }
+`;
+
+const parentCategories = `
+{
+  productCategories(last: 1000, where: {parent: null}) {
+	  nodes{
+		id
+		name
+		databaseId
+		image{
+		  sourceUrl}
+		children{
+		  nodes{
+			id
+			name
+			image{
+		  sourceUrl}
+		name}}}}}
+`;
+
+const childrenCategories = parentDatabaseId => `
+{
+	productCategories(last: 1000, where: {parent: 54}) {
+	  nodes{
+		id
+		name
+		image{
+		  sourceUrl
+		}
+		databaseId
 		children{
 		  nodes{
 			id
@@ -267,6 +310,8 @@ export {
   refreshToken,
   addToCart,
   categories1,
+  parentCategories,
+  childrenCategories,
   productsByCategories,
   searchQuery,
 };

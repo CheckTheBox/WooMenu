@@ -10,7 +10,7 @@ import {
 
 import {HeaderC, SearchC, CarC} from '../../../component/index';
 
-import {categories1} from '../../../Graphql/Actions/index';
+import {categories1, childrenCategories} from '../../../Graphql/Actions/index';
 import axios from 'axios';
 import {Layout, Text} from '@ui-kitten/components';
 
@@ -24,10 +24,10 @@ class Cate extends Component {
   }
   componentDidMount() {
     axios({
-      url: 'http://menu-kaizen.checkthebox.uz/graphql',
+      url: 'http://185.230.205.140/graphql',
       method: 'post',
       data: {
-        query: categories1,
+        query: childrenCategories(54),
       },
     })
       .then(result => {
@@ -35,17 +35,12 @@ class Cate extends Component {
       })
       .catch(err => {});
   }
+
   updateSearch = search => {
     this.setState({search});
   };
   _renderItem = ({item, index}) => {
-    return (
-      <CarC
-        navigation={this.props.navigation}
-        data={item}
-        onPress={() => this.props.navigation.navigate('Details')}
-      />
-    );
+    return <CarC navigation={this.props.navigation} data={item} />;
   };
   style = StyleSheet.create({
     ViewStyle: {
@@ -55,13 +50,12 @@ class Cate extends Component {
   render() {
     return (
       <Layout style={this.style.ViewStyle}>
-        <View style={{backgroundColor: 'transparent', paddingBottom: 20}}>
+        <View style={{backgroundColor: 'transparent', paddingTop: 20}}>
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
         </View>
         <ScrollView style={{flex: 1}}>
-          <View style={{alignSelf: 'center', marginTop: 10}}>
-
+          <View style={{marginTop: 10}}>
             <FlatList
               data={this.state.entries}
               renderItem={this._renderItem}

@@ -14,11 +14,9 @@ import {
   DrawerItem,
 } from '@react-navigation/drawer';
 import SideMenu from './sidemenu';
-import {Layout, withStyles, Spinner} from '@ui-kitten/components';
 
 import {
   Login,
-  Register,
   Home,
   Detail,
   Single,
@@ -44,7 +42,6 @@ function AuthStack() {
       options={{headerShown: false}}
       screenOptions={{gestureEnabled: false}}>
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Register" component={Register} />
     </Stack.Navigator>
   );
 }

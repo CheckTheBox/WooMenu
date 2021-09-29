@@ -43,7 +43,7 @@ persistCache({
 });
 
 const client = new ApolloClient({
-  uri: 'http://menu-kaizen.checkthebox.uz/graphql',
+  uri: 'http://185.230.205.140/graphql',
   cache,
 });
 

@@ -71,7 +71,6 @@ class CatDetail extends Component {
         });
       }
     });
-    // eslint-disable-next-line react/no-did-mount-set-state
     this.setState({cate});
   }
   updateSearch = search => {
@@ -83,7 +82,6 @@ class CatDetail extends Component {
   update = (name, index) => {
     this.setState({where: name});
     const cate = [];
-
     this.state.data.children.nodes.forEach((e, i) => {
       if (i === index) {
         this.setState({where: e.name});
@@ -105,7 +103,7 @@ class CatDetail extends Component {
   });
   abc: any;
   set_a() {
-    if (this.state.where != null) {
+    if (this.state.where !== undefined) {
       this.abc = this.state.where;
     } else {
       this.abc = this.state.data.name;
@@ -115,14 +113,13 @@ class CatDetail extends Component {
   render() {
     return (
       <Layout style={this.style.ViewStyle}>
-        {/* eslint-disable-next-line react-native/no-inline-styles */}
         <View style={{paddingBottom: 20}}>
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
         </View>
-        {/* eslint-disable-next-line react-native/no-inline-styles */}
         <ScrollView style={{flex: 1}}>
           <FlatList
+            // key={Math.random()}
             style={{marginTop: 10}}
             horizontal={true}
             data={this.state.cate}

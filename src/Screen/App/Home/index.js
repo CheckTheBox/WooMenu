@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Dimensions, ScrollView, FlatList} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Dimensions,
+  ScrollView,
+  FlatList,
+  Image,
+} from 'react-native';
 import {HeaderC, SearchC, ICard, TCarC, CarC} from '../../../component/index';
+import {CarC2} from '../../../component/Categories';
+import * as RootNavigation from '../../../RootNavigation';
 
 import AsyncStorage from '@react-native-community/async-storage';
-import GetCat from './GraphQLComponent/Cat.js';
-import GetPop from './GraphQLComponent/products.js';
 import {connect} from 'react-redux';
 import {Layout, Text} from '@ui-kitten/components';
 import axios from 'axios';
-import {categories1} from '../../../Graphql/Actions';
+import {categories1, parentCategories} from '../../../Graphql/Actions';
 
 class Home extends Component {
   constructor(props) {
@@ -25,15 +32,15 @@ class Home extends Component {
     this.setState({user: JSON.parse(userToken)});
   };
 
-  updateSearch = search => {
-    this.setState({search});
-  };
+  // updateSearch = search => {
+  //   this.setState({search});
+  // };
   componentDidMount() {
     axios({
-      url: 'http://menu-kaizen.checkthebox.uz/graphql',
+      url: 'http://185.230.205.140/graphql',
       method: 'post',
       data: {
-        query: categories1,
+        query: parentCategories,
       },
     })
       .then(result => {
@@ -42,43 +49,38 @@ class Home extends Component {
       .catch(err => {});
   }
   _renderItem = ({item, index}) => {
-    return (
-      <CarC
-        navigation={this.props.navigation}
-        data={item}
-        onPress={() => this.props.navigation.navigate('Details')}
-      />
-    );
+    console.error(item);
+    return <CarC2 navigation={this.props.navigation} data={item} />;
   };
-  _renderItem1({item, index}) {
-    return <ICard data={{item, index}} />;
-  }
   style = StyleSheet.create({
     ViewStyle: {
       flex: 1,
       paddingLeft: 15,
       alignSelf: 'center',
-      // backgroundColor: '#1b3022',
     },
   });
 
   render() {
-    var {height, width} = Dimensions.get('window');
+    // var {height, width} = Dimensions.get('window');
     return (
       <Layout style={this.style.ViewStyle}>
-        <View style={{paddingBottom: 20}}>
+        <View style={{paddingTop: 20}}>
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
+          <Image
+            style={{
+              flex: 0,
+              margin: 15,
+              marginRight: 15,
+            }}
+            source={require('../../../static/header_banner.png')}
+            height={300}
+            width={'96%'}
+          />
         </View>
         <ScrollView>
-          <View style={{marginTop: 20}}>
-            <GetPop
-              navigation={this.props.navigation}
-              orderby={0}
-              render={this._renderItem1}
-            />
-          </View>
           <FlatList
+            style={{paddingTop: 20, width: Dimensions.get('screen').width}}
             data={this.state.entries}
             renderItem={this._renderItem}
             numColumns={2}

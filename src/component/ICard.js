@@ -62,7 +62,7 @@ function ICard(props) {
           item={props.data}
         />
       )}>
-      <Text>{striptags(item.description.substring(0, 50)) + '...'}</Text>
+      {/*<Text>{striptags(item.description.substring(0, 50)) + '...'}</Text>*/}
     </Card>
     // <Card
     //   containerStyle={{
