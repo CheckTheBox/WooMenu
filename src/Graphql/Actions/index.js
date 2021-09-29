@@ -105,7 +105,7 @@ const parentCategories = `
 
 const childrenCategories = parentDatabaseId => `
 {
-	productCategories(last: 1000, where: {parent: 54}) {
+	productCategories(last: 1000, where: {parent: ${parentDatabaseId}}) {
 	  nodes{
 		id
 		name

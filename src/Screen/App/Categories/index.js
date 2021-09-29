@@ -13,6 +13,8 @@ import {HeaderC, SearchC, CarC} from '../../../component/index';
 import {categories1, childrenCategories} from '../../../Graphql/Actions/index';
 import axios from 'axios';
 import {Layout, Text} from '@ui-kitten/components';
+import {useQuery} from "@apollo/react-hooks";
+
 
 class Cate extends Component {
   constructor(props) {
@@ -22,12 +24,14 @@ class Cate extends Component {
       cart: true,
     };
   }
+
   componentDidMount() {
+    let parentDatabaseId = this.props.route.params.data.data.databaseId;
     axios({
       url: 'http://185.230.205.140/graphql',
       method: 'post',
       data: {
-        query: childrenCategories(54),
+        query: childrenCategories(parentDatabaseId),
       },
     })
       .then(result => {
