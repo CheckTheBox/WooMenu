@@ -113,7 +113,7 @@ class CatDetail extends Component {
   render() {
     return (
       <Layout style={this.style.ViewStyle}>
-        <View style={{paddingBottom: 20}}>
+        <View style={{paddingTop: 20}}>
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
         </View>

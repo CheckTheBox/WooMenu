@@ -44,7 +44,20 @@ class Home extends Component {
       },
     })
       .then(result => {
-        this.setState({entries: result.data.data.productCategories.nodes});
+        this.setState({
+          parentCategories: result.data.data.productCategories.nodes,
+        });
+      })
+      .catch(err => {});
+    axios({
+      url: 'http://185.230.205.140/graphql',
+      method: 'post',
+      data: {
+        query: categories1,
+      },
+    })
+      .then(result => {
+        this.setState({categories: result.data.data.productCategories.nodes});
       })
       .catch(err => {});
   }
@@ -61,7 +74,6 @@ class Home extends Component {
   });
 
   render() {
-    // var {height, width} = Dimensions.get('window');
     return (
       <Layout style={this.style.ViewStyle}>
         <View style={{paddingTop: 20}}>
@@ -81,7 +93,7 @@ class Home extends Component {
         <ScrollView>
           <FlatList
             style={{paddingTop: 20, width: Dimensions.get('screen').width}}
-            data={this.state.entries}
+            data={this.state.parentCategories}
             renderItem={this._renderItem}
             numColumns={2}
           />

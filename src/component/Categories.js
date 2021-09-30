@@ -75,7 +75,13 @@ function CarC2(props) {
         elevation: 24,
       }}
       onPress={() => {
-        RootNavigation.navigate('Cate', {data: props});
+        console.error(props.data.children.nodes);
+        if (props.data.children.nodes.length === 0) {
+          console.error(props);
+          RootNavigation.navigate('CatDetail', {data: props.data});
+        } else {
+          RootNavigation.navigate('Cate', {data: props});
+        }
       }}>
       <ImageBackground
         style={{

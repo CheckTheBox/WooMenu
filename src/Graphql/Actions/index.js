@@ -62,7 +62,7 @@ const categories = gql`
 `;
 const categories1 = `
 {
-	productCategories(last: 1000) {
+	productCategories(last: 1000, where: {childless: true}) {
 	  nodes{
 		id
 		name
