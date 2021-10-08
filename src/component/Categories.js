@@ -7,6 +7,13 @@ import {ImageBackground} from 'react-native';
 import * as RootNavigation from '../RootNavigation';
 
 function CarC(props) {
+  let image;
+  if (props.data.image !== null) {
+    console.error(props.data.image.sourceUrl);
+    image = props.data.image.sourceUrl;
+  } else {
+    image = '';
+  }
   return (
     <TouchableOpacity
       style={{
@@ -38,7 +45,7 @@ function CarC(props) {
           height: '95%',
           resizeMode: 'cover',
         }}
-        source={{uri: props.data.image.sourceUrl}}>
+        source={{uri: image}}>
         <Text
           style={{
             color: 'white',
@@ -56,6 +63,13 @@ function CarC(props) {
 }
 
 function CarC2(props) {
+  let image;
+  if (props.data.image !== null) {
+    console.error(props.data.image.sourceUrl);
+    image = props.data.image.sourceUrl;
+  } else {
+    image = '';
+  }
   return (
     <TouchableOpacity
       style={{
@@ -93,7 +107,7 @@ function CarC2(props) {
           height: '95%',
           resizeMode: 'cover',
         }}
-        source={{uri: props.data.image.sourceUrl}}>
+        source={{uri: image}}>
         <Text
           style={{
             color: 'white',

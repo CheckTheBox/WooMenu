@@ -87,7 +87,7 @@ const categories1 = `
 
 const parentCategories = `
 {
-  productCategories(last: 1000, where: {parent: null}) {
+  productCategories(last: 1000, where: {parent: null, orderby: DESCRIPTION}) {
 	  nodes{
 		id
 		name

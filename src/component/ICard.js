@@ -5,13 +5,16 @@ import {withNavigation} from '@react-navigation/compat';
 import {Card, Text, Button} from '@ui-kitten/components';
 
 export const CustomHeader = ({item}) => {
+  let image;
+  if (item.item.image !== null) {
+    image = item.item.image.sourceUrl;
+  } else {
+    image = '';
+  }
   // console.log(item.item.name)
   return (
     <React.Fragment>
-      <Image
-        style={styles.headerImage}
-        source={{uri: item.item.image.sourceUrl}}
-      />
+      <Image style={styles.headerImage} source={{uri: image}} />
       <Text style={styles.headerText} category="h6">
         {item.item.name}
       </Text>

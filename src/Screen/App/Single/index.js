@@ -54,6 +54,7 @@ class Single extends Component {
   style = StyleSheet.create({
     ViewStyle: {
       flex: 1,
+      paddingTop: 20,
       // backgroundColor: '#1b3022',
     },
     TextStyle: {

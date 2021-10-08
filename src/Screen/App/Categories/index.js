@@ -13,8 +13,7 @@ import {HeaderC, SearchC, CarC} from '../../../component/index';
 import {categories1, childrenCategories} from '../../../Graphql/Actions/index';
 import axios from 'axios';
 import {Layout, Text} from '@ui-kitten/components';
-import {useQuery} from "@apollo/react-hooks";
-
+import {useQuery} from '@apollo/react-hooks';
 
 class Cate extends Component {
   constructor(props) {

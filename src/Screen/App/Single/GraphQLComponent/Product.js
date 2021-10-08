@@ -54,7 +54,7 @@ const GetProduct = props => {
   const cat = data.product?.productCategories?.nodes.map(e => e.name);
   return (
     <View>
-      <View style={{flex: 1, height: 800}} onLayout={onLayout}>
+      <View style={{flex: 1, height: 700}} onLayout={onLayout}>
         <SliderBox
           images={gal.filter(onlyUnique)}
           sliderBoxHeight={800}

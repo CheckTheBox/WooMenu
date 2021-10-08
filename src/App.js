@@ -20,10 +20,10 @@ import {
 } from '@ui-kitten/components';
 import {EvaIconsPack} from '@ui-kitten/eva-icons';
 import {mapping} from '@eva-design/eva';
-import {dark, light} from './custom-theme'; // <-- Import app theme
+import {dark} from './custom-theme'; // <-- Import app theme
 import {ThemeContext} from './theme-context';
 
-const themes = {light, dark};
+const themes = {dark};
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {
@@ -37,10 +37,10 @@ const cache = new InMemoryCache({
   fragmentMatcher,
 });
 
-persistCache({
-  cache,
-  storage: AsyncStorage,
-});
+// persistCache({
+//   cache,
+//   storage: AsyncStorage,
+// });
 
 const client = new ApolloClient({
   uri: 'http://185.230.205.140/graphql',
@@ -52,7 +52,8 @@ const App = () => {
   const currentTheme = themes[theme];
 
   const toggleTheme = () => {
-    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    // const nextTheme = theme === 'light' ? 'dark' : 'light';
+    const nextTheme = theme === 'dark';
     setTheme(nextTheme);
   };
   const themee = useTheme();
