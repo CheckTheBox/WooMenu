@@ -62,7 +62,7 @@ class Home extends Component {
       .catch(err => {});
   }
   _renderItem = ({item, index}) => {
-    console.error(item);
+    // console.error(item);
     return <CarC2 navigation={this.props.navigation} data={item} />;
   };
   style = StyleSheet.create({

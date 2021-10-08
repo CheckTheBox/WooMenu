@@ -9,7 +9,7 @@ import * as RootNavigation from '../RootNavigation';
 function CarC(props) {
   let image;
   if (props.data.image !== null) {
-    console.error(props.data.image.sourceUrl);
+    // console.error(props.data.image.sourceUrl);
     image = props.data.image.sourceUrl;
   } else {
     image = '';
@@ -55,7 +55,7 @@ function CarC(props) {
             textAlign: 'center',
             backgroundColor: '#00000090',
           }}>
-          {props.data.name}
+          {props.data.name + '    '}
         </Text>
       </ImageBackground>
     </TouchableOpacity>
@@ -65,7 +65,7 @@ function CarC(props) {
 function CarC2(props) {
   let image;
   if (props.data.image !== null) {
-    console.error(props.data.image.sourceUrl);
+    // console.error(props.data.image.sourceUrl);
     image = props.data.image.sourceUrl;
   } else {
     image = '';
@@ -89,9 +89,9 @@ function CarC2(props) {
         elevation: 24,
       }}
       onPress={() => {
-        console.error(props.data.children.nodes);
+        // console.error(props.data.children.nodes);
         if (props.data.children.nodes.length === 0) {
-          console.error(props);
+          // console.error(props);
           RootNavigation.navigate('CatDetail', {data: props.data});
         } else {
           RootNavigation.navigate('Cate', {data: props});
@@ -117,7 +117,7 @@ function CarC2(props) {
             textAlign: 'center',
             backgroundColor: '#00000090',
           }}>
-          {props.data.name}
+          {props.data.name + '    '}
         </Text>
       </ImageBackground>
     </TouchableOpacity>

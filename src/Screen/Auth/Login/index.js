@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, StatusBar, StyleSheet, Image} from 'react-native';
+import {View, StatusBar, StyleSheet, Image, Dimensions} from 'react-native';
 import GButton from '../../../component/GButton';
 import {Mutation} from 'react-apollo';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -42,14 +42,20 @@ const Login = () => {
   return (
     <Layout style={style.ViewStyle}>
       <View style={{flex: 1}}>
-        <Layout level={'4'} style={{height: 300}}>
+        <Layout level={'4'} style={{
+            height: 550,
+            width: Dimensions.get('screen').width - 60,
+            alignSelf: 'center',
+            backgroundColor: '#ffffff00',
+            paddingTop: 30,
+          }}>
           <Image
-            style={{flex: 1, height: 300}}
-            source={{
-              uri:
-                'http://185.230.205.140/wp-content/uploads/2021/09/Снимок-экрана-2021-09-26-в-15.50.19.png',
-              // 'https://img.indiefolio.com/fit-in/1100x0/filters:format(webp):fill(transparent)/project/body/388476be0eff4cc3096f58e67d81bac0.jpg',
+            style={{
+              flex: 1,
+              alignSelf: 'center',
+              width: Dimensions.get('screen').width - 60,
             }}
+            source={require('../../../static/login_banner.png')}
           />
         </Layout>
       </View>
