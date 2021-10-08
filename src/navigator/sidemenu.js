@@ -40,7 +40,7 @@ const drawerData = [
   // {title: 'Profile', route: 'Home'},
   // {title: 'Категории', route: 'Cate'},
   {title: <Text style={{fontSize: 20}}>Корзина</Text>, route: 'Cart'},
-  // {title: <Text style={{fontSize: 20}}>Тема</Text>, route: 'Settings'},
+  {title: <Text style={{fontSize: 20}}>Тема</Text>, route: 'Settings'},
 ];
 
 const onRouteSelect = async index => {

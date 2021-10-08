@@ -12,7 +12,7 @@ import {
   InMemoryCache,
   IntrospectionFragmentMatcher,
 } from 'apollo-cache-inmemory';
-import {persistCache} from 'apollo-cache-persist';
+// import {persistCache} from 'apollo-cache-persist';
 import {
   ApplicationProvider,
   IconRegistry,
@@ -20,10 +20,10 @@ import {
 } from '@ui-kitten/components';
 import {EvaIconsPack} from '@ui-kitten/eva-icons';
 import {mapping} from '@eva-design/eva';
-import {dark} from './custom-theme'; // <-- Import app theme
+import {dark, light} from './custom-theme'; // <-- Import app theme
 import {ThemeContext} from './theme-context';
 
-const themes = {dark};
+const themes = {dark, light};
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: {
@@ -48,12 +48,12 @@ const client = new ApolloClient({
 });
 
 const App = () => {
-  const [theme, setTheme] = React.useState(Appearance.getColorScheme());
+  // const [theme, setTheme] = React.useState(Appearance.getColorScheme());
+  const [theme, setTheme] = React.useState('dark');
   const currentTheme = themes[theme];
 
   const toggleTheme = () => {
-    // const nextTheme = theme === 'light' ? 'dark' : 'light';
-    const nextTheme = theme === 'dark';
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(nextTheme);
   };
   const themee = useTheme();

@@ -42,7 +42,9 @@ const Login = () => {
   return (
     <Layout style={style.ViewStyle}>
       <View style={{flex: 1}}>
-        <Layout level={'4'} style={{
+        <Layout
+          level={'4'}
+          style={{
             height: 550,
             width: Dimensions.get('screen').width - 60,
             alignSelf: 'center',

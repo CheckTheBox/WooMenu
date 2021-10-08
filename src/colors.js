@@ -26,18 +26,19 @@ const Light = {
   BtnG: ['#EC6F66', '#F3A183'],
 };
 
-let ThemeColor = Light;
+let ThemeColor = Dark;
 
 const Logic = async () => {
   try {
     const value = await AsyncStorage.getItem('@theme');
-    if (value !== null) {
-      if (value == 'Dark') {
-        return (ThemeColor = Dark);
-      } else {
-        return (ThemeColor = Light);
-      }
-    }
+    return (ThemeColor = Dark);
+    // if (value !== null) {
+    //   if (value == 'Dark') {
+    //     return (ThemeColor = Dark);
+    //   } else {
+    //     return (ThemeColor = Light);
+    //   }
+    // }
   } catch (e) {
     // error reading value
   }
