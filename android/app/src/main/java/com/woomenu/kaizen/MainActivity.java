@@ -1,4 +1,4 @@
-package com.Kaizen;
+package com.woomenu.kaizen;
 
 import com.facebook.react.ReactActivity;
 

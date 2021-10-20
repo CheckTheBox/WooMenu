@@ -72,12 +72,14 @@ class Home extends Component {
       alignSelf: 'center',
     },
   });
-
   render() {
     return (
       <Layout style={this.style.ViewStyle}>
         <View style={{paddingTop: 20}}>
-          <HeaderC navigation={this.props.navigation} />
+          <HeaderC
+            navigation={this.props.navigation}
+            current_menu={'main_menu'}
+          />
           <SearchC />
           <Image
             style={{

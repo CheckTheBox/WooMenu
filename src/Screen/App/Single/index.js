@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, ScrollView, TouchableHighlight} from 'react-native';
+import {View, StyleSheet, ScrollView} from 'react-native';
 import {HeaderC} from '../../../component/index';
 
 import {connect} from 'react-redux';
@@ -16,8 +16,6 @@ class Single extends Component {
   }
 
   FooterBtn = () => {
-    // const theme = useTheme();
-
     return (
       <View
         style={{

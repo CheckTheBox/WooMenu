@@ -11,7 +11,6 @@ export const CustomHeader = ({item}) => {
   } else {
     image = '';
   }
-  // console.log(item.item.name)
   return (
     <React.Fragment>
       <Image style={styles.headerImage} source={{uri: image}} />
@@ -21,11 +20,11 @@ export const CustomHeader = ({item}) => {
     </React.Fragment>
   );
 };
-export const Footer = ({item, onPress}) => {
+export const Footer = ({onPress}) => {
   return (
     <React.Fragment>
       <Button onPress={onPress} style={{flex: 1}}>
-        {item.item.price.replace('&nbsp;', ' ')}
+        Подробнее
       </Button>
     </React.Fragment>
   );
@@ -33,6 +32,14 @@ export const Footer = ({item, onPress}) => {
 
 function ICard(props) {
   const {item} = props.data;
+  let description;
+  if (item.description !== null) {
+    description = (
+      <Text>{striptags(item.description.substring(0, 50)) + '...'}</Text>
+    );
+  } else {
+    description = <Text>{striptags(item.name.substring(0, 50)) + '...'}</Text>;
+  }
   let a = Dimensions.get('screen').width;
   a = a - a / 6;
 
@@ -44,6 +51,7 @@ function ICard(props) {
         borderWidth: 0,
         shadowColor: '#000',
         margin: 10,
+        marginBottom: 25,
         shadowOffset: {
           width: 0,
           height: 7,
@@ -65,7 +73,7 @@ function ICard(props) {
           item={props.data}
         />
       )}>
-      {/*<Text>{striptags(item.description.substring(0, 50)) + '...'}</Text>*/}
+      {description}
     </Card>
     // <Card
     //   containerStyle={{
