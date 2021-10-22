@@ -57,9 +57,15 @@ class Cate extends Component {
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
         </View>
-        <ScrollView style={{flex: 1}}>
+        <ScrollView style={{flex: 1, paddingLeft: 11, paddingRight: 30}}>
           <View style={{marginTop: 10}}>
             <FlatList
+              style={{
+                paddingTop: 20,
+                width: Dimensions.get('screen').width,
+                paddingLeft: 10,
+                paddingRight: 26,
+              }}
               data={this.state.entries}
               renderItem={this._renderItem}
               numColumns={2}

@@ -49,14 +49,13 @@ class Cart extends React.Component {
           style={{
             flex: 1,
             backgroundColor: theme['color-primary-800'],
-
             justifyContent: 'center',
             alignItems: 'center',
           }}>
           <Text
             onPress={() => this.props.navigation.navigate('Checkout')}
             style={{fontFamily: 'Montserrat-Bold', fontSize: 15}}>
-            Procced to Checkout
+            Очистить корзину
           </Text>
         </View>
       </View>
@@ -67,13 +66,19 @@ class Cart extends React.Component {
     return (
       <Layout style={this.style.ViewStyle}>
         <HeaderC navigation={this.props.navigation} />
-        <ScrollView style={{flex: 1}}>
-          <Text h2 style={{marginLeft: 20, fontFamily: 'Montserrat-Bold'}}>
+        <ScrollView
+          style={{flex: 1, paddingLeft: 15, paddingRight: 30, paddingTop: 20}}>
+          <Text
+            h2
+            style={{
+              marginLeft: 20,
+              fontFamily: 'Montserrat-Bold',
+              paddingBottom: 20,
+            }}>
             Корзина
           </Text>
           <GetProducts MakeTotal={this.MakeTotal} Cart={this.props.Cart.cart} />
         </ScrollView>
-        {/*<this.Footer />*/}
       </Layout>
     );
   }
@@ -84,4 +89,5 @@ const mapStateToProps = (state /*, ownProps*/) => {
     Cart: state.Cart,
   };
 };
+
 export default connect(mapStateToProps)(Cart);

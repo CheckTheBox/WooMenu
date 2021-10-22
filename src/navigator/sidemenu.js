@@ -15,6 +15,7 @@ import {useDispatch} from 'react-redux';
 
 const Header = props => (
   <DrawerHeaderFooter
+    style={{marginTop: -4}}
     title={props.user.user.name}
     description={props.user.user.email}
     icon={() => (
@@ -34,13 +35,13 @@ const Header = props => (
 );
 const drawerData = [
   {
-    title: <Text style={{fontSize: 20}}>Главная страница</Text>,
+    title: <Text style={{fontSize: 20}}>🏡 Главная страница</Text>,
     route: 'Home',
   },
   // {title: 'Profile', route: 'Home'},
   // {title: 'Категории', route: 'Cate'},
-  {title: <Text style={{fontSize: 20}}>Корзина</Text>, route: 'Cart'},
-  {title: <Text style={{fontSize: 20}}>Тема</Text>, route: 'Settings'},
+  {title: <Text style={{fontSize: 20}}>🛒 Корзина</Text>, route: 'Cart'},
+  {title: <Text style={{fontSize: 20}}>🌗 Тема</Text>, route: 'Settings'},
 ];
 
 const onRouteSelect = async index => {
@@ -61,7 +62,6 @@ function SideMenu(props) {
       <Layout
         style={{
           flex: 1,
-          // backgroundColor: '#1b3022'
         }}>
         <Drawer
           data={drawerData}

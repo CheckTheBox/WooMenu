@@ -51,6 +51,7 @@ const HeaderC = ({heading, Cart, current_menu}, props) => {
       {/* <StatusBar backgroundColor={ themee["color-basic-800"] } barStyle={themeContext.theme == "light" ? "dark-content" : "light-content"} /> */}
 
       <TopNavigation
+        style={{paddingRight: 30}}
         title={heading}
         leftControl={renderLeftControl()}
         rightControls={renderRightControls(Cart)}

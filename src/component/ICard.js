@@ -41,24 +41,23 @@ function ICard(props) {
     description = <Text>{striptags(item.name.substring(0, 50)) + '...'}</Text>;
   }
   let a = Dimensions.get('screen').width;
-  a = a - a / 6;
 
   return (
     <Card
+      onPress={() =>
+        props.navigation.navigate('Single', {
+          id: item.id,
+          product: item.productId,
+        })
+      }
       status={'info'}
       style={{
-        padding: 0,
-        borderWidth: 0,
-        shadowColor: '#000',
-        margin: 10,
-        marginBottom: 25,
-        shadowOffset: {
-          width: 0,
-          height: 7,
-        },
-        shadowOpacity: 0.41,
-        shadowRadius: 9.11,
-        width: a / 2,
+        padding: 10,
+        borderWidth: 1,
+        borderColor: '#C6C8CE80',
+        margin: 4,
+        marginTop: 20,
+        width: a / 2 - 32,
         elevation: 14,
       }}
       header={() => <CustomHeader item={props.data} />}
@@ -75,27 +74,6 @@ function ICard(props) {
       )}>
       {description}
     </Card>
-    // <Card
-    //   containerStyle={{
-    //     borderWidth: 0, shadowColor: "#000", marginBottom: 20, backgroundColor: color.PLight,
-    //     shadowOffset: {
-    //       width: 0,
-    //       height: 7,
-    //     },
-    //     shadowOpacity: 0.41,
-    //     shadowRadius: 9.11,
-    //     width: a / 2,
-    //     elevation: 14,
-    //   }}
-    //   image={{ uri: item.image.sourceUrl }}>
-    //   <Text style={{ marginBottom: 10, fontSize: 15, fontWeight: 'bold', fontFamily: 'Montserrat-Light', color: color.PrimaryF }}>
-    //     {item.name}
-    //   </Text>
-    //   <Text style={{ marginBottom: 10, fontSize: 12, top: -5, fontFamily: 'Montserrat-Light', color: color.PrimaryF }}>
-    //     {striptags(item.description.substring(0, 50)) + '...'}
-    //   </Text>
-    //   <GButton onPress={() => props.navigation.navigate('Single', { id: item.id, product: item.productId })} Text={item.price} />
-    // </Card>
   );
 }
 

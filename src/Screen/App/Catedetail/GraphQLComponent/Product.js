@@ -19,10 +19,10 @@ const GetProducts = props => {
         <View
           style={{
             flex: 1,
-            // backgroundColor: '#1b3022'
           }}>
           <Text
             style={{
+              paddingLeft: 10,
               fontSize: 18,
               fontFamily: 'Montserrat-SemiBold',
             }}>

@@ -1,49 +1,71 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import {View, Image, ScrollView, ActivityIndicator} from 'react-native';
 import striptags from 'striptags';
 import {connect} from 'react-redux';
-import {Text, Input, Icon} from '@ui-kitten/components';
+import {Text, Input, Icon, useTheme} from '@ui-kitten/components';
 
 const CheckoutCard = ({data, ind, index, dispatch}) => {
-  const [state, setstate] = useState(true);
+  const [setstate] = useState(true);
 
   return (
     <View
       style={{
-        height: 130,
+        height: 180,
         borderTopWidth: 0.1,
         borderBottomWidth: 0.1,
         flexDirection: 'row',
         marginTop: 10,
         marginBottom: 5,
+        paddingLeft: 10,
+        paddingRight: 15,
       }}>
-      <View style={{width: 130}}>
+      <View>
         <Image
           source={{uri: data[1].image.sourceUrl}}
-          style={{width: 130, height: 130}}
+          style={{width: 180, height: 180}}
           PlaceholderContent={<ActivityIndicator />}
         />
       </View>
       <View style={{flex: 1}}>
         <View style={{flex: 1, margin: 10}}>
           <ScrollView>
-            <Text style={{fontSize: 22, fontFamily: 'Montserrat-Light'}}>
+            <Text
+              style={{
+                marginLeft: 15,
+                paddingTop: 5,
+                fontSize: 24,
+                fontFamily: 'Montserrat-Light',
+                height: 30,
+              }}>
               {data[1].name}
             </Text>
-            <Text style={{fontSize: 15, fontFamily: 'Montserrat-Light'}}>
-              {striptags(data[1].description)}
+            <Text
+              style={{
+                marginLeft: 15,
+                height: 72,
+                fontSize: 18,
+                fontFamily: 'Montserrat-Light',
+              }}>
+              {striptags(data[1].description.substring(0, 100) + '...')}
             </Text>
           </ScrollView>
         </View>
-        <View style={{height: 30, flexDirection: 'row'}}>
+        <View style={{height: 45, flexDirection: 'row'}}>
           <Input
-            containerStyle={{width: 30}}
-            style={{marginLeft: 20}}
+            containerStyle={{width: 45}}
+            style={{marginLeft: 22}}
             value={'' + ind.Q}
           />
           <Text style={{top: 5, left: 10, fontFamily: 'Montserrat-Light'}} />
           <View style={{flexDirection: 'row-reverse', flex: 1}}>
-            <Text style={{top: 5, left: 10, fontFamily: 'Montserrat-Light'}}>
+            <Text
+              style={{
+                paddingTop: 5,
+                fontSize: 24,
+                top: 5,
+                left: 10,
+                fontFamily: 'Montserrat-Light',
+              }}>
               {parseInt(ind.Q) +
                 ' x ' +
                 parseInt(data[1].price.replace(' ', '')) +

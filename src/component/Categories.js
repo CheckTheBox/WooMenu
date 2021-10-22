@@ -1,36 +1,34 @@
 import React from 'react';
-import {TouchableHighlight} from 'react-native';
-
+import {Dimensions} from 'react-native';
 import {Text} from '@ui-kitten/components';
 import {TouchableOpacity, Image} from 'react-native';
 import {ImageBackground} from 'react-native';
 import * as RootNavigation from '../RootNavigation';
 
+let a = Dimensions.get('screen').width;
+
 function CarC(props) {
   let image;
   if (props.data.image !== null) {
-    // console.error(props.data.image.sourceUrl);
     image = props.data.image.sourceUrl;
   } else {
     image = '';
   }
+  let b = props.data.name.length;
   return (
     <TouchableOpacity
       style={{
         height: 210,
-        flex: 1,
+        flex: 0,
         justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 20,
-        shadowColor: '#000000',
-        shadowOffset: {
-          width: 12,
-          height: 12,
-        },
+        padding: 2,
+        borderWidth: 1,
+        borderColor: '#C6C8CE80',
         margin: 4,
-        shadowOpacity: 0.58,
-        shadowRadius: 16.0,
-        elevation: 24,
+        // marginTop: 20,
+        marginBottom: 20,
+        width: a / 2 - 36,
+        elevation: 14,
       }}
       onPress={() => {
         RootNavigation.navigate('CatDetail', {data: props.data});
@@ -39,10 +37,6 @@ function CarC(props) {
         style={{
           flex: 1,
           justifyContent: 'center',
-          alignItems: 'center',
-          padding: 0,
-          width: '95%',
-          height: '95%',
           resizeMode: 'cover',
         }}
         source={{uri: image}}>
@@ -50,12 +44,14 @@ function CarC(props) {
           style={{
             color: 'white',
             fontSize: 24,
+            alignSelf: 'center',
+            width: b * 20,
             lineHeight: 32,
             fontWeight: 'bold',
             textAlign: 'center',
             backgroundColor: '#00000090',
           }}>
-          {props.data.name + '    '}
+          {props.data.name}
         </Text>
       </ImageBackground>
     </TouchableOpacity>
@@ -70,28 +66,24 @@ function CarC2(props) {
   } else {
     image = '';
   }
+  let b = props.data.name.length;
   return (
     <TouchableOpacity
       style={{
         height: 210,
-        flex: 1,
+        flex: 0,
         justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 20,
-        shadowColor: '#000000',
-        shadowOffset: {
-          width: 12,
-          height: 12,
-        },
+        padding: 2,
+        borderWidth: 1,
+        borderColor: '#C6C8CE80',
         margin: 4,
-        shadowOpacity: 0.58,
-        shadowRadius: 16.0,
-        elevation: 24,
+        // marginTop: 20,
+        marginBottom: 20,
+        width: a / 2 - 36,
+        elevation: 14,
       }}
       onPress={() => {
-        // console.error(props.data.children.nodes);
         if (props.data.children.nodes.length === 0) {
-          // console.error(props);
           RootNavigation.navigate('CatDetail', {data: props.data});
         } else {
           RootNavigation.navigate('Cate', {data: props});
@@ -101,10 +93,6 @@ function CarC2(props) {
         style={{
           flex: 1,
           justifyContent: 'center',
-          alignItems: 'center',
-          padding: 0,
-          width: '95%',
-          height: '95%',
           resizeMode: 'cover',
         }}
         source={{uri: image}}>
@@ -112,12 +100,14 @@ function CarC2(props) {
           style={{
             color: 'white',
             fontSize: 24,
+            alignSelf: 'center',
+            width: b * 20,
             lineHeight: 32,
             fontWeight: 'bold',
             textAlign: 'center',
             backgroundColor: '#00000090',
           }}>
-          {props.data.name + '    '}
+          {props.data.name}
         </Text>
       </ImageBackground>
     </TouchableOpacity>

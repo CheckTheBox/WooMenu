@@ -80,21 +80,27 @@ class Home extends Component {
             navigation={this.props.navigation}
             current_menu={'main_menu'}
           />
-          <SearchC />
           <Image
             style={{
               flex: 0,
-              margin: 15,
+              marginLeft: 15,
               marginRight: 15,
+              width: '96%',
+              height: 300,
             }}
             source={require('../../../static/header_banner.png')}
-            height={300}
-            width={'96%'}
+            // height={300}
           />
+          <SearchC />
         </View>
         <ScrollView>
           <FlatList
-            style={{paddingTop: 20, width: Dimensions.get('screen').width}}
+            style={{
+              paddingTop: 20,
+              width: Dimensions.get('screen').width,
+              paddingLeft: 11,
+              paddingRight: 26,
+            }}
             data={this.state.parentCategories}
             renderItem={this._renderItem}
             numColumns={2}

@@ -117,23 +117,17 @@ class CatDetail extends Component {
           <HeaderC navigation={this.props.navigation} />
           <SearchC />
         </View>
-        <ScrollView style={{flex: 1}}>
-          <FlatList
-            // key={Math.random()}
-            style={{marginTop: 10}}
-            horizontal={true}
-            data={this.state.cate}
-            renderItem={({item, index}) => (
-              <Item index={index} update={this.update} data={item} />
-            )}
-            keyExtractor={item => item.id}
-            showsHorizontalScrollIndicator={false}
-          />
-
+        <ScrollView
+          style={{
+            flex: 1,
+            alignSelf: 'center',
+            paddingTop: 20,
+            paddingLeft: 15,
+            paddingRight: 30,
+          }}>
           <GetProducts
             title={this.state.data.name.toUpperCase()}
             orderby={this.set_a()}
-            // orderby={this.state.where}
             render={this._renderItem}
           />
         </ScrollView>

@@ -66,22 +66,19 @@ const GetProduct = props => {
       </View>
       <View style={{flex: 1, margin: 30, alignItems: 'center'}}>
         <Text h1 style={style.TextStyle}>
-          ✔ {data.product.name}{' '}
+          🔵 {data.product.name}{' '}
         </Text>
-        {data.product.onSale ? (
-          <Text style={{fontFamily: 'Montserrat-Bold', fontSize: 23}}>
-            🛒 Sale{' '}
+        {cat && (
+          <Text style={style.CStyle}>
+            {'\n'}📁 {cat.join(', ')}{' '}
           </Text>
-        ) : (
-          <View />
         )}
-        {cat && <Text style={style.CStyle}>{cat.join(', ')} </Text>}
         <Text style={{fontFamily: 'Montserrat-Light'}}>
-          {/* {data.product.price.replace('$', '💲')} */}
+          {'\n'}💲 {data.product.price.replace('&nbsp;', ' ').replace(/\B(?=(\d{3})+(?!\d))/g, " ")}
         </Text>
         {loop()}
         <Text style={{fontFamily: 'Montserrat-Light'}}>
-          🔵 {striptags(data.product.description)}
+          📜 {striptags(data.product.description.replace('\n', '\n\n'))}
         </Text>
         {/*<Text style={{fontFamily: 'Montserrat-Light'}}>*/}
         {/*  🤞SKU :{striptags(data.product.sku)}*/}
