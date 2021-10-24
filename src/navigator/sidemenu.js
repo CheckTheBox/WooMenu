@@ -12,6 +12,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import {DrawerContentScrollView} from '@react-navigation/drawer';
 import * as RootNavigation from '../RootNavigation.js';
 import {useDispatch} from 'react-redux';
+import realm from '../../realm';
 
 const Header = props => (
   <DrawerHeaderFooter
@@ -70,6 +71,12 @@ function SideMenu(props) {
         />
         <Button
           onPress={async () => {
+            // const old = realm.objects('Server');
+            // old.forEach(server => {
+            //   realm.write(() => {
+            //     realm.delete(server);
+            //   });
+            // });
             await AsyncStorage.removeItem('userToken');
             dispatch({type: 'LOGOUTUSER'});
 
