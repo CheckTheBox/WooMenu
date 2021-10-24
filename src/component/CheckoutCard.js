@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Text, Input, Icon, useTheme} from '@ui-kitten/components';
 
 const CheckoutCard = ({data, ind, index, dispatch}) => {
-  const [setstate] = useState(true);
+  const [state, setstate] = useState(true);
 
   return (
     <View
