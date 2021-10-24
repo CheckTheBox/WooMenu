@@ -58,7 +58,7 @@ class Cate extends Component {
           <SearchC />
         </View>
         <ScrollView style={{flex: 1, paddingLeft: 11, paddingRight: 30}}>
-          <View style={{marginTop: 10}}>
+          <View style={{marginTop: 0}}>
             <FlatList
               style={{
                 paddingTop: 20,

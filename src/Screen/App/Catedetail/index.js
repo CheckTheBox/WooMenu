@@ -121,9 +121,10 @@ class CatDetail extends Component {
           style={{
             flex: 1,
             alignSelf: 'center',
+            // marginLeft: 5,
             paddingTop: 20,
-            paddingLeft: 15,
-            paddingRight: 30,
+            paddingLeft: 0,
+            paddingRight: 0,
           }}>
           <GetProducts
             title={this.state.data.name.toUpperCase()}

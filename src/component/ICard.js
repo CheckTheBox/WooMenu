@@ -20,11 +20,14 @@ export const CustomHeader = ({item}) => {
     </React.Fragment>
   );
 };
-export const Footer = ({onPress}) => {
+export const Footer = ({item, onPress}) => {
   return (
     <React.Fragment>
       <Button onPress={onPress} style={{flex: 1}}>
-        Подробнее
+        {/*Подробнее*/}
+        {item.item.price
+          .replace('&nbsp;', ' ')
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
       </Button>
     </React.Fragment>
   );
@@ -57,7 +60,7 @@ function ICard(props) {
         borderColor: '#C6C8CE80',
         margin: 4,
         marginTop: 20,
-        width: a / 2 - 32,
+        width: a / 2 - 26,
         elevation: 14,
       }}
       header={() => <CustomHeader item={props.data} />}

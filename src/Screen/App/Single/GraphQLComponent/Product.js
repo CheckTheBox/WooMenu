@@ -74,16 +74,20 @@ const GetProduct = props => {
           </Text>
         )}
         <Text style={{fontFamily: 'Montserrat-Light'}}>
-          {'\n'}💲 {data.product.price.replace('&nbsp;', ' ').replace(/\B(?=(\d{3})+(?!\d))/g, " ")}
+          {'\n'}💲{' '}
+          {data.product.price
+            .replace('&nbsp;', ' ')
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
         </Text>
         {loop()}
         <Text style={{fontFamily: 'Montserrat-Light'}}>
-          📜 {striptags(data.product.description.replace('\n', '\n\n'))}
+          📜{' '}
+          {striptags(data.product.description.replace('\n', '\n\n'))
+            .replace('&#8212;', '-')
+            .replace('&#171;', '"')
+            .replace('&#187', '"')
+            .replace('&nbsp;', ' ')}
         </Text>
-        {/*<Text style={{fontFamily: 'Montserrat-Light'}}>*/}
-        {/*  🤞SKU :{striptags(data.product.sku)}*/}
-        {/*</Text>*/}
-        {/* <Attributes options={data.product.attributes ? data.product.attributes.nodes : []} /> */}
         {data.product.purchaseNote ? (
           <Layout
             level="2"

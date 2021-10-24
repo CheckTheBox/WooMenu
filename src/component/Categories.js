@@ -45,7 +45,7 @@ function CarC(props) {
             color: 'white',
             fontSize: 24,
             alignSelf: 'center',
-            width: b * 20,
+            width: a / 2 - 72,
             lineHeight: 32,
             fontWeight: 'bold',
             textAlign: 'center',
@@ -79,7 +79,7 @@ function CarC2(props) {
         margin: 4,
         // marginTop: 20,
         marginBottom: 20,
-        width: a / 2 - 36,
+        width: a / 2 - 25,
         elevation: 14,
       }}
       onPress={() => {
@@ -101,7 +101,7 @@ function CarC2(props) {
             color: 'white',
             fontSize: 24,
             alignSelf: 'center',
-            width: b * 20,
+            width: a / 2 - 60,
             lineHeight: 32,
             fontWeight: 'bold',
             textAlign: 'center',

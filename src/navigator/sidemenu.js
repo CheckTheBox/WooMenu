@@ -15,7 +15,7 @@ import {useDispatch} from 'react-redux';
 
 const Header = props => (
   <DrawerHeaderFooter
-    style={{marginTop: -4}}
+    style={{marginTop: 0}}
     title={props.user.user.name}
     description={props.user.user.email}
     icon={() => (

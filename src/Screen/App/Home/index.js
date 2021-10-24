@@ -68,7 +68,7 @@ class Home extends Component {
   style = StyleSheet.create({
     ViewStyle: {
       flex: 1,
-      paddingLeft: 15,
+      paddingLeft: 5,
       alignSelf: 'center',
     },
   });
@@ -84,8 +84,8 @@ class Home extends Component {
             style={{
               flex: 0,
               marginLeft: 15,
-              marginRight: 15,
-              width: '96%',
+              marginRight: 30,
+              width: '95%',
               height: 300,
             }}
             source={require('../../../static/header_banner.png')}
@@ -99,7 +99,7 @@ class Home extends Component {
               paddingTop: 20,
               width: Dimensions.get('screen').width,
               paddingLeft: 11,
-              paddingRight: 26,
+              paddingRight: 15,
             }}
             data={this.state.parentCategories}
             renderItem={this._renderItem}
