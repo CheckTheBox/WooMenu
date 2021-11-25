@@ -53,7 +53,7 @@ function AppStack() {
       headerMode="none"
       navigationOptions={{headerVisible: false}}
       options={{headerShown: false}}
-      screenOptions={{gestureEnabled: false}}>
+      screenOptions={{gestureEnabled: true, gestureResponseDistance: 50}}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Detail" component={Detail} />
       <Stack.Screen name="Single" component={Single} />

@@ -7,9 +7,8 @@ import {
   FlatList,
   Image,
 } from 'react-native';
-import {HeaderC, SearchC, ICard, TCarC, CarC} from '../../../component/index';
+import {HeaderC, SearchC} from '../../../component/index';
 import {CarC2} from '../../../component/Categories';
-import * as RootNavigation from '../../../RootNavigation';
 
 import AsyncStorage from '@react-native-community/async-storage';
 import {connect} from 'react-redux';
@@ -32,12 +31,9 @@ class Home extends Component {
     this.setState({user: JSON.parse(userToken)});
   };
 
-  // updateSearch = search => {
-  //   this.setState({search});
-  // };
   componentDidMount() {
     axios({
-      url: 'http://185.230.205.140/graphql',
+      url: 'https://kaizen.woomenu.uz/graphql',
       method: 'post',
       data: {
         query: parentCategories,
@@ -50,7 +46,7 @@ class Home extends Component {
       })
       .catch(err => {});
     axios({
-      url: 'http://185.230.205.140/graphql',
+      url: 'https://kaizen.woomenu.uz/graphql',
       method: 'post',
       data: {
         query: categories1,

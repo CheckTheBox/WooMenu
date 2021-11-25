@@ -27,7 +27,7 @@ class Cate extends Component {
   componentDidMount() {
     let parentDatabaseId = this.props.route.params.data.data.databaseId;
     axios({
-      url: 'http://185.230.205.140/graphql',
+      url: 'https://kaizen.woomenu.uz/graphql',
       method: 'post',
       data: {
         query: childrenCategories(parentDatabaseId),

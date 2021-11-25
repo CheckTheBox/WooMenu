@@ -22,8 +22,6 @@ import {EvaIconsPack} from '@ui-kitten/eva-icons';
 import {mapping} from '@eva-design/eva';
 import {dark, light} from './custom-theme'; // <-- Import app theme
 import {ThemeContext} from './theme-context';
-import realm from '../realm';
-import uuid from "react-native-uuid";
 
 const themes = {dark, light};
 
@@ -44,35 +42,13 @@ const cache = new InMemoryCache({
 //   storage: AsyncStorage,
 // });
 
-
-// realm.write(() => {
-//   realm.create('Server', {
-//     id: uuid.v4(),
-//     address: '185.230.205.140',
-//     username: 'admin',
-//     password: 'Adm8n0ass',
-//   });
-// });
-let uri, address;
-try {
-  address = realm.objects('Server').filtered('active == true')[0].address
-  console.warn(realm.objects('Server'));
-  if (address !== undefined) {
-    uri = address;
-  }
-} catch (e) {
-  console.warn(e);
-}
-
 const client = new ApolloClient({
-  // uri: 'http://185.230.205.140/graphql',
-  uri: uri,
+  uri: 'https://kaizen.woomenu.uz/graphql',
   cache,
 });
 
 const App = () => {
   // const [theme, setTheme] = React.useState(Appearance.getColorScheme());
-  console.reportErrorsAsExceptions = false;
   const [theme, setTheme] = React.useState('dark');
   const currentTheme = themes[theme];
 

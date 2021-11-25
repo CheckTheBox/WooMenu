@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dimensions} from 'react-native';
+import {Dimensions, View} from 'react-native';
 import {Text} from '@ui-kitten/components';
 import {TouchableOpacity, Image} from 'react-native';
 import {ImageBackground} from 'react-native';
@@ -40,19 +40,27 @@ function CarC(props) {
           resizeMode: 'cover',
         }}
         source={{uri: image}}>
-        <Text
-          style={{
-            color: 'white',
-            fontSize: 24,
-            alignSelf: 'center',
-            width: a / 2 - 72,
-            lineHeight: 32,
-            fontWeight: 'bold',
-            textAlign: 'center',
-            backgroundColor: '#00000090',
-          }}>
-          {props.data.name}
-        </Text>
+        <View>
+          <View
+            style={{
+              alignSelf: 'center',
+              padding: 24,
+              backgroundColor: '#00000090',
+              alignContent: 'center',
+              borderRadius: 5,
+            }}>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 28,
+                lineHeight: 32,
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}>
+              {props.data.name}
+            </Text>
+          </View>
+        </View>
       </ImageBackground>
     </TouchableOpacity>
   );
@@ -79,7 +87,7 @@ function CarC2(props) {
         margin: 4,
         // marginTop: 20,
         marginBottom: 20,
-        width: a / 2 - 25,
+        width: a / 2 - 36,
         elevation: 14,
       }}
       onPress={() => {
@@ -96,19 +104,27 @@ function CarC2(props) {
           resizeMode: 'cover',
         }}
         source={{uri: image}}>
-        <Text
-          style={{
-            color: 'white',
-            fontSize: 24,
-            alignSelf: 'center',
-            width: a / 2 - 60,
-            lineHeight: 32,
-            fontWeight: 'bold',
-            textAlign: 'center',
-            backgroundColor: '#00000090',
-          }}>
-          {props.data.name}
-        </Text>
+        <View>
+          <View
+            style={{
+              alignSelf: 'center',
+              padding: 24,
+              backgroundColor: '#00000090',
+              alignContent: 'center',
+              borderRadius: 5,
+            }}>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 28,
+                lineHeight: 32,
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}>
+              {props.data.name}
+            </Text>
+          </View>
+        </View>
       </ImageBackground>
     </TouchableOpacity>
   );
