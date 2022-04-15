@@ -31,7 +31,7 @@ function CarC(props) {
         elevation: 14,
       }}
       onPress={() => {
-        RootNavigation.navigate('CatDetail', {data: props.data});
+        RootNavigation.navigate('CategoryDetail', {data: props.data});
       }}>
       <ImageBackground
         style={{
@@ -65,16 +65,13 @@ function CarC(props) {
     </TouchableOpacity>
   );
 }
-
-function CarC2(props) {
+function Category(props) {
   let image;
-  if (props.data.image !== null) {
-    // console.error(props.data.image.sourceUrl);
-    image = props.data.image.sourceUrl;
+  if (props.data.category.image !== null) {
+    image = props.data.category.image;
   } else {
     image = '';
   }
-  let b = props.data.name.length;
   return (
     <TouchableOpacity
       style={{
@@ -85,16 +82,15 @@ function CarC2(props) {
         borderWidth: 1,
         borderColor: '#C6C8CE80',
         margin: 4,
-        // marginTop: 20,
         marginBottom: 20,
         width: a / 2 - 36,
         elevation: 14,
       }}
       onPress={() => {
-        if (props.data.children.nodes.length === 0) {
-          RootNavigation.navigate('CatDetail', {data: props.data});
+        if (props.data.products.length === 0) {
+          RootNavigation.navigate('Cate', {data: props.data});
         } else {
-          RootNavigation.navigate('Cate', {data: props});
+          RootNavigation.navigate('CategoryDetail', {data: props});
         }
       }}>
       <ImageBackground
@@ -121,7 +117,7 @@ function CarC2(props) {
                 fontWeight: 'bold',
                 textAlign: 'center',
               }}>
-              {props.data.name}
+              {props.data.category.name}
             </Text>
           </View>
         </View>
@@ -130,4 +126,4 @@ function CarC2(props) {
   );
 }
 
-export {CarC, CarC2};
+export {CarC, Category};

@@ -5,7 +5,7 @@ import Single from './App/Single';
 import Cart from './App/Cart';
 import Checkout from './App/Checkout';
 import Cate from './App/Categories';
-import CatDetail from './App/Catedetail';
+import {CategoryDetail} from './App/Catedetail';
 import Settings from './App/Setting';
 import Search from './App/Search';
 
@@ -17,7 +17,7 @@ export {
   Cart,
   Checkout,
   Cate,
-  CatDetail,
+  CategoryDetail,
   Settings,
   Search,
 };

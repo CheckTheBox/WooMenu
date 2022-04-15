@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
 import {View, Dimensions, FlatList} from 'react-native';
 import {useQuery} from '@apollo/react-hooks';
-import {productsByCategories} from '../../../../Graphql/Actions/index';
 import {Text} from '@ui-kitten/components';
 
 const GetProducts = props => {
-  var {height, width} = Dimensions.get('window');
-  const {data, loading, error} = useQuery(productsByCategories(props.orderby));
-  if (loading) {
-    return <View />;
-  }
-  if (error) {
-    return <Text>ERROR</Text>;
-  }
+  const products = props.products;
   return (
     <View style={{marginTop: 10, alignSelf: 'center'}}>
       <View style={{flexDirection: 'row'}}>
@@ -30,11 +22,7 @@ const GetProducts = props => {
           </Text>
         </View>
       </View>
-      <FlatList
-        data={data.products.nodes}
-        renderItem={props.render}
-        numColumns={2}
-      />
+      <FlatList data={products} renderItem={props.render} numColumns={2} />
     </View>
   );
 };

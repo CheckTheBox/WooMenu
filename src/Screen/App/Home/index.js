@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 import {HeaderC, SearchC} from '../../../component/index';
-import {CarC2} from '../../../component/Categories';
+import {Category} from '../../../component/Categories';
 
 import AsyncStorage from '@react-native-community/async-storage';
 import {connect} from 'react-redux';
@@ -23,6 +23,7 @@ class Home extends Component {
       search: '',
       user: '',
       entries: [],
+      banner_url: null,
     };
     this._bootstrapAsync();
   }
@@ -46,20 +47,43 @@ class Home extends Component {
       })
       .catch(err => {});
     axios({
-      url: 'https://kaizen.woomenu.uz/graphql',
-      method: 'post',
-      data: {
-        query: categories1,
-      },
+      url: 'https://admin.kaizen-sushi.uz/api/get_menu',
+      method: 'get',
     })
       .then(result => {
-        this.setState({categories: result.data.data.productCategories.nodes});
+        this.setState({
+          categories: result.data.data,
+        });
       })
-      .catch(err => {});
+      .catch(error => {
+        console.log(error);
+      });
+    // axios({
+    //   url: 'https://kaizen.woomenu.uz/graphql',
+    //   method: 'post',
+    //   data: {
+    //     query: categories1,
+    //   },
+    // })
+    //   .then(result => {
+    //     this.setState({categories: result.data.data.productCategories.nodes});
+    //   })
+    //   .catch(err => {});
+    axios({
+      url: 'https://admin.kaizen-sushi.uz/api/get_slides',
+      method: 'get',
+    })
+      .then(result => {
+        let banners_count = result.data.slides.length;
+        let index = Math.random() * (banners_count - 1);
+        this.setState({banner_url: result.data.slides[Math.floor(index)].url});
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }
-  _renderItem = ({item, index}) => {
-    // console.error(item);
-    return <CarC2 navigation={this.props.navigation} data={item} />;
+  _renderCategory = ({item, index}) => {
+    return <Category navigation={this.props.navigation} data={item} />;
   };
   style = StyleSheet.create({
     ViewStyle: {
@@ -84,11 +108,26 @@ class Home extends Component {
               width: '95%',
               height: 300,
             }}
-            source={require('../../../static/header_banner.png')}
-            // height={300}
+            // source={require('../../../static/header_banner.png')}
+            source={{
+              uri: this.state.banner_url,
+            }}
           />
           <SearchC />
         </View>
+        {/*<ScrollView>*/}
+        {/*  <FlatList*/}
+        {/*    style={{*/}
+        {/*      paddingTop: 20,*/}
+        {/*      width: Dimensions.get('screen').width,*/}
+        {/*      paddingLeft: 11,*/}
+        {/*      paddingRight: 15,*/}
+        {/*    }}*/}
+        {/*    data={this.state.parentCategories}*/}
+        {/*    renderItem={this._renderItem}*/}
+        {/*    numColumns={2}*/}
+        {/*  />*/}
+        {/*</ScrollView>*/}
         <ScrollView>
           <FlatList
             style={{
@@ -97,8 +136,8 @@ class Home extends Component {
               paddingLeft: 11,
               paddingRight: 15,
             }}
-            data={this.state.parentCategories}
-            renderItem={this._renderItem}
+            data={this.state.categories}
+            renderItem={this._renderCategory}
             numColumns={2}
           />
         </ScrollView>

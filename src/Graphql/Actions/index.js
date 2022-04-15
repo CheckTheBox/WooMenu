@@ -251,30 +251,6 @@ const addToCart = (qty, id, mut) =>
 `,
   });
 
-const productsByCategories = orderby => gql`
-{
-  products(first: 200, where:{categoryIn:"${orderby}"}){
-    nodes {
-      id
-      name
-      description
-	  ... on SimpleProduct{
-        price
-      }
-      ... on VariableProduct{
-        price
-      }
-      ... on ExternalProduct{
-        price
-      }
-      image{
-        sourceUrl
-      }
-
-    }
-  }
-}
-`;
 
 const searchQuery = name => gql`
 query MyQuery {
@@ -312,6 +288,5 @@ export {
   categories1,
   parentCategories,
   childrenCategories,
-  productsByCategories,
   searchQuery,
 };

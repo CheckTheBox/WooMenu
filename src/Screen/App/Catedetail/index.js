@@ -46,7 +46,7 @@ function Item(data, index, state) {
   );
 }
 
-class CatDetail extends Component {
+class CategoryDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,12 +54,11 @@ class CatDetail extends Component {
       cart: true,
       data: props.route.params?.data ?? null,
     };
-    // this.setState({data: this.props.navigation.getParam('data', null)});
   }
   componentDidMount() {
     const cate = [];
 
-    this.state.data.children.nodes.forEach((e, i) => {
+    this.state.data.data.products.forEach((e, i) => {
       if (i === 0) {
         this.setState({where: e.name});
         cate.push({
@@ -82,7 +81,7 @@ class CatDetail extends Component {
   update = (name, index) => {
     this.setState({where: name});
     const cate = [];
-    this.state.data.children.nodes.forEach((e, i) => {
+    this.state.data.data.products.forEach((e, i) => {
       if (i === index) {
         this.setState({where: e.name});
         cate.push({
@@ -106,7 +105,7 @@ class CatDetail extends Component {
     if (this.state.where !== undefined) {
       this.abc = this.state.where;
     } else {
-      this.abc = this.state.data.name;
+      this.abc = this.state.data.data.category.name;
     }
     return this.abc;
   }
@@ -127,8 +126,9 @@ class CatDetail extends Component {
             paddingRight: 0,
           }}>
           <GetProducts
-            title={this.state.data.name.toUpperCase()}
+            title={this.state.data.data.category.name.toUpperCase()}
             orderby={this.set_a()}
+            products={this.state.data.data.products}
             render={this._renderItem}
           />
         </ScrollView>
@@ -137,4 +137,4 @@ class CatDetail extends Component {
   }
 }
 
-export default CatDetail;
+export {CategoryDetail};

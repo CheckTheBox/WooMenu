@@ -6,45 +6,47 @@ import {Card, Text, Button} from '@ui-kitten/components';
 
 export const CustomHeader = ({item}) => {
   let image;
-  if (item.item.image !== null) {
-    image = item.item.image.sourceUrl;
-  } else {
-    image = '';
+  let name;
+  if (item !== undefined) {
+    if (item.item.image !== null) {
+      image = item.item.image;
+    } else {
+      image = '';
+    }
+    name = item.item.name;
   }
   return (
     <React.Fragment>
       <Image style={styles.headerImage} source={{uri: image}} />
       <Text style={styles.headerText} category="h6">
-        {item.item.name}
+        {name}
       </Text>
     </React.Fragment>
   );
 };
+
 export const Footer = ({item, onPress}) => {
   return (
     <React.Fragment>
       <Button onPress={onPress} style={{flex: 1}}>
         {/*Подробнее*/}
-        {item.item.price
-          .replace('&nbsp;', ' ')
-          .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+        {String(item.item.price)}
       </Button>
     </React.Fragment>
   );
 };
 
 function ICard(props) {
-  const {item} = props.data;
-  let description;
-  if (item.description !== null) {
-    description = (
-      <Text>{striptags(item.description.substring(0, 50)) + '...'}</Text>
-    );
-  } else {
-    description = <Text>{striptags(item.name.substring(0, 50)) + '...'}</Text>;
+  const {item} = props.data.item;
+  let about;
+  if (item !== undefined) {
+    if (item.about !== null) {
+      about = <Text>{striptags(item.about.substring(0, 50)) + '...'}</Text>;
+    } else {
+      about = <Text>{striptags(item.name.substring(0, 50)) + '...'}</Text>;
+    }
   }
   let a = Dimensions.get('screen').width;
-
   return (
     <Card
       onPress={() =>
@@ -75,7 +77,7 @@ function ICard(props) {
           item={props.data}
         />
       )}>
-      {description}
+      {about}
     </Card>
   );
 }

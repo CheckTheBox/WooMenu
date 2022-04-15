@@ -58,7 +58,8 @@
     "realm": "^10.9.1",
     "redux": "^4.0.4",
     "rn-sliding-up-panel": "^2.3.1",
-    "striptags": "^3.1.1"
+    "striptags": "^3.1.1",
+    "yarn": "^1.22.18"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -69,7 +70,7 @@
     "eslint": "^6.2.1",
     "graphql-tag": "^2.12.5",
     "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.56.0",
+    "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.8.6"
   },
   "jest": {

@@ -23,7 +23,7 @@ import {
   Cart,
   Checkout,
   Cate,
-  CatDetail,
+  CategoryDetail,
   Settings,
   Search,
 } from '../Screen/index';
@@ -62,7 +62,7 @@ function AppStack() {
       <Stack.Screen name="Cate" component={Cate} />
       <Stack.Screen name="Search" component={Search} />
 
-      <Stack.Screen name="CatDetail" component={CatDetail} />
+      <Stack.Screen name="CategoryDetail" component={CategoryDetail} />
       <Stack.Screen name="Settings" component={Settings} />
     </Stack.Navigator>
   );
