@@ -41,7 +41,9 @@ export const Footer = ({item, onPress}) => {
           fontSize: 24,
           lineHeight: 24,
         }}>
-        {String(item.item.price)}
+        {String(item.item.price)
+          .replace('&nbsp;', ' ')
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
       </Button>
     </React.Fragment>
   );
@@ -70,8 +72,7 @@ function ICard(props) {
         <Footer
           onPress={() =>
             props.navigation.navigate('Single', {
-              id: item.id,
-              product: item.productId,
+              item: item,
             })
           }
           item={props.data}

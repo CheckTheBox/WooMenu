@@ -9,7 +9,6 @@ import {
   Animated,
 } from 'react-native';
 import {HeaderC, SearchC, ICard} from '../../../component/index';
-import GetProducts from './GraphQLComponent/Product.js';
 import {Layout} from '@ui-kitten/components';
 
 class Detail extends Component {

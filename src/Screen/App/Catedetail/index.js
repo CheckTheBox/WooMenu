@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
-import GetProducts from './GraphQLComponent/Product';
 import {HeaderC, ICard} from '../../../component/index';
 import {Layout} from '@ui-kitten/components';
 

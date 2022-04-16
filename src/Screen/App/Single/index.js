@@ -3,7 +3,6 @@ import {View, StyleSheet, ScrollView} from 'react-native';
 import {HeaderC} from '../../../component/index';
 
 import {connect} from 'react-redux';
-import GetProduct from './GraphQLComponent/Product';
 import {Layout, Text, useTheme, Icon, Button} from '@ui-kitten/components';
 
 class Single extends Component {

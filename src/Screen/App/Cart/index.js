@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
 import {connect} from 'react-redux';
-import GetProducts from './GraphQLComponent/Product';
 import {HeaderC} from '../../../component/index';
 import {Layout, Text, useTheme} from '@ui-kitten/components';
 
