@@ -28,8 +28,19 @@ export const CustomHeader = ({item}) => {
 export const Footer = ({item, onPress}) => {
   return (
     <React.Fragment>
-      <Button onPress={onPress} style={{flex: 1}}>
-        {/*Подробнее*/}
+      <Button
+        onPress={onPress}
+        style={{
+          flex: 1,
+          backgroundColor: 'rgba(214,64,69,0.9)',
+          borderColor: 'rgba(44,44,44,0.6)',
+        }}
+        textStyle={{
+          fontWeight: 'normal',
+          fontFamily: 'Montserrat-Regular',
+          fontSize: 24,
+          lineHeight: 24,
+        }}>
         {String(item.item.price)}
       </Button>
     </React.Fragment>
@@ -37,33 +48,22 @@ export const Footer = ({item, onPress}) => {
 };
 
 function ICard(props) {
-  const {item} = props.data.item;
-  let about;
-  if (item !== undefined) {
-    if (item.about !== null) {
-      about = <Text>{striptags(item.about.substring(0, 50)) + '...'}</Text>;
-    } else {
-      about = <Text>{striptags(item.name.substring(0, 50)) + '...'}</Text>;
-    }
-  }
-  let a = Dimensions.get('screen').width;
+  const item = props.data.item;
+  let width = Dimensions.get('screen').width;
   return (
     <Card
       onPress={() =>
         props.navigation.navigate('Single', {
-          id: item.id,
-          product: item.productId,
+          item: item,
         })
       }
       status={'info'}
       style={{
-        padding: 10,
+        padding: 0,
         borderWidth: 1,
-        borderColor: '#C6C8CE80',
-        margin: 4,
-        marginTop: 20,
-        width: a / 2 - 26,
-        elevation: 14,
+        borderColor: 'rgba(44,44,44,0.9)',
+        margin: 10,
+        width: width / 2 - 32,
       }}
       header={() => <CustomHeader item={props.data} />}
       footer={() => (
@@ -77,7 +77,7 @@ function ICard(props) {
           item={props.data}
         />
       )}>
-      {about}
+      {/*{about}*/}
     </Card>
   );
 }
@@ -85,11 +85,17 @@ function ICard(props) {
 const styles = StyleSheet.create({
   headerText: {
     marginHorizontal: 10,
-    marginVertical: 16,
+    marginVertical: 10,
+    // color: 'white',
+    fontSize: 24,
+    lineHeight: 24,
+    fontWeight: 'normal',
+    textAlign: 'left',
+    fontFamily: 'Montserrat-Regular',
   },
   headerImage: {
     flex: 1,
-    height: 192,
+    height: 240,
   },
 });
 

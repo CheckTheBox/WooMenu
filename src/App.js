@@ -12,7 +12,6 @@ import {
   InMemoryCache,
   IntrospectionFragmentMatcher,
 } from 'apollo-cache-inmemory';
-// import {persistCache} from 'apollo-cache-persist';
 import {
   ApplicationProvider,
   IconRegistry,
@@ -37,27 +36,19 @@ const cache = new InMemoryCache({
   fragmentMatcher,
 });
 
-// persistCache({
-//   cache,
-//   storage: AsyncStorage,
-// });
-
 const client = new ApolloClient({
   uri: 'https://kaizen.woomenu.uz/graphql',
   cache,
 });
 
 const App = () => {
-  // const [theme, setTheme] = React.useState(Appearance.getColorScheme());
-  const [theme, setTheme] = React.useState('dark');
+  const [theme, setTheme] = React.useState('light');
   const currentTheme = themes[theme];
 
   const toggleTheme = () => {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(nextTheme);
   };
-  const themee = useTheme();
-
   return (
     <React.Fragment>
       <IconRegistry icons={EvaIconsPack} />
@@ -65,9 +56,9 @@ const App = () => {
         <ApplicationProvider mapping={mapping} theme={currentTheme}>
           <StatusBar
             backgroundColor={
-              theme == 'light' ? 'white' : currentTheme['color-basic-800']
+              theme === 'light' ? 'white' : currentTheme['color-basic-800']
             }
-            barStyle={theme == 'light' ? 'dark-content' : 'light-content'}
+            barStyle={theme === 'light' ? 'dark-content' : 'light-content'}
           />
 
           <Provider store={store}>

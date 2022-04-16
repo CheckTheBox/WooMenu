@@ -8,6 +8,7 @@ import {login} from '../../../Graphql/Actions/index';
 import {Layout, Text, Input, Icon} from '@ui-kitten/components';
 import {useDispatch} from 'react-redux';
 import SimpleToast from 'react-native-simple-toast';
+import {Banner, BannerCarousel} from '../../../component/Banner';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -41,24 +42,10 @@ const Login = () => {
   };
   return (
     <Layout style={style.ViewStyle}>
-      <View style={{flex: 1}}>
-        <Layout
-          level={'4'}
-          style={{
-            height: 550,
-            width: Dimensions.get('screen').width - 60,
-            alignSelf: 'center',
-            backgroundColor: '#ffffff00',
-            paddingTop: 30,
-          }}>
-          <Image
-            style={{
-              flex: 1,
-              alignSelf: 'center',
-              width: Dimensions.get('screen').width - 60,
-            }}
-            source={require('../../../static/login_banner.png')}
-          />
+      <View style={{flex: 1, paddingTop: 20}}>
+        <Layout>
+          {/*<Banner />*/}
+          <BannerCarousel />
         </Layout>
       </View>
       <View style={{flex: 1}}>
@@ -81,7 +68,7 @@ const Login = () => {
 
 const style = StyleSheet.create({
   ViewStyle: {
-    padding: 30,
+    padding: 20,
     flex: 1,
     // backgroundColor: '#1b3022',
   },

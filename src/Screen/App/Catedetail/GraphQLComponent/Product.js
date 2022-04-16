@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-import {View, Dimensions, FlatList} from 'react-native';
-import {useQuery} from '@apollo/react-hooks';
+import React from 'react';
+import {View, FlatList} from 'react-native';
 import {Text} from '@ui-kitten/components';
 
 const GetProducts = props => {
@@ -26,14 +25,4 @@ const GetProducts = props => {
     </View>
   );
 };
-function OrderBY(order) {
-  switch (order) {
-    case 0:
-      return {title: 'Все меню 🎉', filter: '{field: PARENT,order: DESC }'};
-      break;
-    default:
-      return {title: 'Все меню 🎉', filter: '{field: PARENT,order: DESC }'};
-      break;
-  }
-}
 export default GetProducts;

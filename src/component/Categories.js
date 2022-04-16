@@ -5,7 +5,7 @@ import {TouchableOpacity, Image} from 'react-native';
 import {ImageBackground} from 'react-native';
 import * as RootNavigation from '../RootNavigation';
 
-let a = Dimensions.get('screen').width;
+let width = Dimensions.get('screen').width;
 
 function CarC(props) {
   let image;
@@ -27,7 +27,7 @@ function CarC(props) {
         margin: 4,
         // marginTop: 20,
         marginBottom: 20,
-        width: a / 2 - 36,
+        width: width / 2 - 36,
         elevation: 14,
       }}
       onPress={() => {
@@ -75,23 +75,17 @@ function Category(props) {
   return (
     <TouchableOpacity
       style={{
-        height: 210,
+        height: ((width / 2 - 32) / 11) * 9,
         flex: 0,
         justifyContent: 'center',
-        padding: 2,
+        padding: 0,
         borderWidth: 1,
         borderColor: '#C6C8CE80',
-        margin: 4,
-        marginBottom: 20,
-        width: a / 2 - 36,
-        elevation: 14,
+        margin: 10,
+        width: width / 2 - 32,
       }}
       onPress={() => {
-        if (props.data.products.length === 0) {
-          RootNavigation.navigate('Cate', {data: props.data});
-        } else {
-          RootNavigation.navigate('CategoryDetail', {data: props});
-        }
+        RootNavigation.navigate('CategoryDetail', {data: props});
       }}>
       <ImageBackground
         style={{
@@ -104,18 +98,19 @@ function Category(props) {
           <View
             style={{
               alignSelf: 'center',
-              padding: 24,
-              backgroundColor: '#00000090',
+              padding: 20,
+              backgroundColor: 'rgba(44,44,44,0.6)',
               alignContent: 'center',
               borderRadius: 5,
             }}>
             <Text
               style={{
                 color: 'white',
-                fontSize: 28,
+                fontSize: 32,
                 lineHeight: 32,
-                fontWeight: 'bold',
+                fontWeight: 'normal',
                 textAlign: 'center',
+                fontFamily: 'Montserrat-Medium',
               }}>
               {props.data.category.name}
             </Text>

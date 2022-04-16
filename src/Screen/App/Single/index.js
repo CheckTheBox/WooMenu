@@ -12,6 +12,7 @@ class Single extends Component {
     this.state = {
       q: 1,
       loading: false,
+      item: props.route.params.item,
     };
   }
 
@@ -111,7 +112,7 @@ class Single extends Component {
           <HeaderC navigation={this.props.navigation} />
         </View>
         <ScrollView style={{flex: 1}}>
-          <GetProduct query={this.props.route.params?.id ?? null} />
+          <GetProduct item={this.state.item} />
         </ScrollView>
         <this.Footer />
       </Layout>

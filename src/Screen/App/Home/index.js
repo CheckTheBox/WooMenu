@@ -1,20 +1,12 @@
 import React, {Component} from 'react';
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-  ScrollView,
-  FlatList,
-  Image,
-} from 'react-native';
-import {HeaderC, SearchC} from '../../../component/index';
+import {View, StyleSheet, Dimensions, ScrollView, FlatList} from 'react-native';
+import {HeaderC} from '../../../component/index';
 import {Category} from '../../../component/Categories';
-
+import {Banner, BannerCarousel} from '../../../component/Banner';
 import AsyncStorage from '@react-native-community/async-storage';
 import {connect} from 'react-redux';
-import {Layout, Text} from '@ui-kitten/components';
+import {Layout} from '@ui-kitten/components';
 import axios from 'axios';
-import {categories1, parentCategories} from '../../../Graphql/Actions';
 
 class Home extends Component {
   constructor(props) {
@@ -34,19 +26,6 @@ class Home extends Component {
 
   componentDidMount() {
     axios({
-      url: 'https://kaizen.woomenu.uz/graphql',
-      method: 'post',
-      data: {
-        query: parentCategories,
-      },
-    })
-      .then(result => {
-        this.setState({
-          parentCategories: result.data.data.productCategories.nodes,
-        });
-      })
-      .catch(err => {});
-    axios({
       url: 'https://admin.kaizen-sushi.uz/api/get_menu',
       method: 'get',
     })
@@ -58,29 +37,6 @@ class Home extends Component {
       .catch(error => {
         console.log(error);
       });
-    // axios({
-    //   url: 'https://kaizen.woomenu.uz/graphql',
-    //   method: 'post',
-    //   data: {
-    //     query: categories1,
-    //   },
-    // })
-    //   .then(result => {
-    //     this.setState({categories: result.data.data.productCategories.nodes});
-    //   })
-    //   .catch(err => {});
-    axios({
-      url: 'https://admin.kaizen-sushi.uz/api/get_slides',
-      method: 'get',
-    })
-      .then(result => {
-        let banners_count = result.data.slides.length;
-        let index = Math.random() * (banners_count - 1);
-        this.setState({banner_url: result.data.slides[Math.floor(index)].url});
-      })
-      .catch(error => {
-        console.log(error);
-      });
   }
   _renderCategory = ({item, index}) => {
     return <Category navigation={this.props.navigation} data={item} />;
@@ -88,7 +44,6 @@ class Home extends Component {
   style = StyleSheet.create({
     ViewStyle: {
       flex: 1,
-      paddingLeft: 5,
       alignSelf: 'center',
     },
   });
@@ -100,41 +55,15 @@ class Home extends Component {
             navigation={this.props.navigation}
             current_menu={'main_menu'}
           />
-          <Image
-            style={{
-              flex: 0,
-              marginLeft: 15,
-              marginRight: 30,
-              width: '95%',
-              height: 300,
-            }}
-            // source={require('../../../static/header_banner.png')}
-            source={{
-              uri: this.state.banner_url,
-            }}
-          />
-          <SearchC />
         </View>
-        {/*<ScrollView>*/}
-        {/*  <FlatList*/}
-        {/*    style={{*/}
-        {/*      paddingTop: 20,*/}
-        {/*      width: Dimensions.get('screen').width,*/}
-        {/*      paddingLeft: 11,*/}
-        {/*      paddingRight: 15,*/}
-        {/*    }}*/}
-        {/*    data={this.state.parentCategories}*/}
-        {/*    renderItem={this._renderItem}*/}
-        {/*    numColumns={2}*/}
-        {/*  />*/}
-        {/*</ScrollView>*/}
         <ScrollView>
+          <View style={{padding: 20}}>
+            <BannerCarousel />
+          </View>
           <FlatList
             style={{
-              paddingTop: 20,
-              width: Dimensions.get('screen').width,
-              paddingLeft: 11,
-              paddingRight: 15,
+              padding: 10,
+              width: '100%',
             }}
             data={this.state.categories}
             renderItem={this._renderCategory}
