@@ -1,4 +1,4 @@
-platform :ios, '13.6'
+platform :ios, '16.1'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
@@ -32,6 +32,7 @@ target 'Kaizen' do
   pod 'RCT-Folly', :podspec => "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
 
   pod 'RCTTypeSafety', :path => '../node_modules/react-native/Libraries/TypeSafety'
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
   target 'KaizenTests' do
     inherit! :search_paths
