@@ -77,6 +77,10 @@
 		3F915A2C257A49ABA61C6CCB /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-MediumItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		40CE80DC496F75D95D4DCACE /* libPods-Kaizen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kaizen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		474B7707CE474802B08B8977 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		4AF0B1B62A473651006410D0 /* banner_theme_light.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = banner_theme_light.jpg; path = assets/src/static/banner_theme_light.jpg; sourceTree = "<group>"; };
+		4AF0B1B72A473651006410D0 /* login_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_banner.png; path = assets/src/static/login_banner.png; sourceTree = "<group>"; };
+		4AF0B1B82A473651006410D0 /* header_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header_banner.png; path = assets/src/static/header_banner.png; sourceTree = "<group>"; };
+		4AF0B1B92A473651006410D0 /* banner_theme_dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = banner_theme_dark.jpg; path = assets/src/static/banner_theme_dark.jpg; sourceTree = "<group>"; };
 		4BFB033B3258463288C7AAF8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		4DF20E33496ED3B55578FF5A /* Pods-Kaizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kaizen.release.xcconfig"; path = "Target Support Files/Pods-Kaizen/Pods-Kaizen.release.xcconfig"; sourceTree = "<group>"; };
 		51876328D550429A9342605B /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -209,6 +213,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4AF0B1B92A473651006410D0 /* banner_theme_dark.jpg */,
+				4AF0B1B62A473651006410D0 /* banner_theme_light.jpg */,
+				4AF0B1B82A473651006410D0 /* header_banner.png */,
+				4AF0B1B72A473651006410D0 /* login_banner.png */,
 				13B07FAE1A68108700A75B9A /* Kaizen */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* KaizenTests */,
@@ -348,7 +356,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = CheckTheBox;
+				ORGANIZATIONNAME = Astafeev;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -358,10 +366,9 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kaizen" */;
 			compatibilityVersion = "Xcode 12.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -416,7 +423,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -426,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		3A0EB60CEE9CE267A9522A68 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -556,6 +563,8 @@
 			baseConfigurationReference = DEDA772DC9E6D76294E81489 /* Pods-KaizenTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BCBF28L4Z;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -574,7 +583,9 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.astafeev.woomenu.kaizen-menu-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen.app/Kaizen";
 			};
 			name = Debug;
@@ -584,6 +595,8 @@
 			baseConfigurationReference = 5F0AC8AF52388BE8E2139E84 /* Pods-KaizenTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 3BCBF28L4Z;
 				INFOPLIST_FILE = KaizenTests/Info.plist;
@@ -599,7 +612,9 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.astafeev.woomenu.kaizen-menu-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaizen.app/Kaizen";
 			};
 			name = Release;
@@ -609,9 +624,11 @@
 			baseConfigurationReference = 394D373F8995F045D0DEE8CC /* Pods-Kaizen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 9Q9UCM98QM;
+				DEVELOPMENT_TEAM = 3BCBF28L4Z;
 				INFOPLIST_FILE = Kaizen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -624,8 +641,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.checkthebox.woomenu.kaizen;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.astafeev.woomenu.kaizen-menu";
 				PRODUCT_NAME = Kaizen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -637,8 +655,10 @@
 			baseConfigurationReference = 4DF20E33496ED3B55578FF5A /* Pods-Kaizen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9Q9UCM98QM;
+				DEVELOPMENT_TEAM = 3BCBF28L4Z;
 				INFOPLIST_FILE = Kaizen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -651,8 +671,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.astafeev.woomenu.kaizen;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.astafeev.woomenu.kaizen-menu";
 				PRODUCT_NAME = Kaizen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -688,9 +709,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: astafeev0308@icloud.com (TJHNSQK2VX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: astafeev0308@icloud.com (TJHNSQK2VX)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 3BCBF28L4Z;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -711,6 +735,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -744,9 +769,12 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: astafeev0308@icloud.com (TJHNSQK2VX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: astafeev0308@icloud.com (TJHNSQK2VX)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 3BCBF28L4Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
